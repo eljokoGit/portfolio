@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-agent PMO copilot | Bruno Lesgourgues</title>
+<meta name="description" content="Claude agents turn an IT programme's meetings and documents into a validated knowledge base, minutes, daily briefs and questions. The project manager stays the arbiter.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/pmo-copilot/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/pmo-copilot/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/pmo-copilot/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/pmo-copilot/">
+<meta property="og:title" content="Multi-agent PMO copilot | Bruno Lesgourgues">
+<meta property="og:description" content="Claude agents turn an IT programme's meetings and documents into a validated knowledge base, minutes, daily briefs and questions. The project manager stays the arbiter.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/pilotage/cockpit-overview.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=mufcr3cr">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/projects/" aria-current="page">Projects</a></li><li><a href="/portfolio/#method">Method</a></li><li><a href="/portfolio/#tools">Tools</a></li><li><a href="/portfolio/#contact">About</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Language"><span class="lang is-current" aria-current="true">EN</span><a class="lang" href="/portfolio/fr/projets/pmo-copilot/" hreflang="fr" lang="fr">FR</a><a class="lang" href="/portfolio/es/proyectos/pmo-copilot/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>All projects</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M160,110h48a14,14,0,0,0,14-14V48a14,14,0,0,0-14-14H160a14,14,0,0,0-14,14V66H128a22,22,0,0,0-22,22v34H70V112A14,14,0,0,0,56,98H24a14,14,0,0,0-14,14v32a14,14,0,0,0,14,14H56a14,14,0,0,0,14-14V134h36v34a22,22,0,0,0,22,22h18v18a14,14,0,0,0,14,14h48a14,14,0,0,0,14-14V160a14,14,0,0,0-14-14H160a14,14,0,0,0-14,14v18H128a10,10,0,0,1-10-10V88a10,10,0,0,1,10-10h18V96A14,14,0,0,0,160,110ZM58,144a2,2,0,0,1-2,2H24a2,2,0,0,1-2-2V112a2,2,0,0,1,2-2H56a2,2,0,0,1,2,2Zm100,16a2,2,0,0,1,2-2h48a2,2,0,0,1,2,2v48a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2Zm0-112a2,2,0,0,1,2-2h48a2,2,0,0,1,2,2V96a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2Z"/></svg></span>
+      <h1 class="intro__title">Multi-agent PMO copilot</h1>
+      <p class="intro__lead">Claude agents turn an IT programme's meetings and documents into a validated knowledge base, minutes, daily briefs and questions. The project manager stays the arbiter.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Category</dt><dd>Agent systems</dd></div>
+          <div><dt>Period</dt><dd>March 2026 to now</dd></div>
+          <div><dt>Status</dt><dd>In production, daily use for six months</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Claude Cowork, Claude Code, Python, JSON Schema, Zod, TypeScript, React, Fastify, Docker, Mermaid</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-overview.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-overview.webp" alt="The cockpit's overview page, with a fictitious programme" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">The project</h2>
+      <div class="prose prose--lead"><p>I run an IT transformation programme at a large industrial group. After each meeting, an agent reads the transcript and writes structured minutes: decisions, actions with owner and due date, risks, open questions.</p><p>Every night, an orchestrator splits the work across specialised sub-agents, which fold these minutes and documents into a schema-checked knowledge base. When an agent is unsure, it asks instead of inventing. I answer from a web cockpit, and my answers are applied automatically.</p><p>This is the kind of system a company needs to make agents useful: a reliable knowledge base, clear roles, measured costs and a human who decides. The screenshots use a fictitious programme: no real data is shown.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">What I did with AI</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M160,110h48a14,14,0,0,0,14-14V48a14,14,0,0,0-14-14H160a14,14,0,0,0-14,14V66H128a22,22,0,0,0-22,22v34H70V112A14,14,0,0,0,56,98H24a14,14,0,0,0-14,14v32a14,14,0,0,0,14,14H56a14,14,0,0,0,14-14V134h36v34a22,22,0,0,0,22,22h18v18a14,14,0,0,0,14,14h48a14,14,0,0,0,14-14V160a14,14,0,0,0-14-14H160a14,14,0,0,0-14,14v18H128a10,10,0,0,1-10-10V88a10,10,0,0,1,10-10h18V96A14,14,0,0,0,160,110ZM58,144a2,2,0,0,1-2,2H24a2,2,0,0,1-2-2V112a2,2,0,0,1,2-2H56a2,2,0,0,1,2,2Zm100,16a2,2,0,0,1,2-2h48a2,2,0,0,1,2,2v48a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2Zm0-112a2,2,0,0,1,2-2h48a2,2,0,0,1,2,2V96a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2Z"/></svg></span>
+  <div><h3>An orchestrator and 9 sub-agents</h3><p>The night orchestrator launches 7 modules in parallel, then 2 in sequence. They communicate through manifest files stored in one folder per run, which makes every night replayable and auditable.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M152,98H104a6,6,0,0,0-6,6v48a6,6,0,0,0,6,6h48a6,6,0,0,0,6-6V104A6,6,0,0,0,152,98Zm-6,48H110V110h36Zm86,0H214V110h18a6,6,0,0,0,0-12H214V56a14,14,0,0,0-14-14H158V24a6,6,0,0,0-12,0V42H110V24a6,6,0,0,0-12,0V42H56A14,14,0,0,0,42,56V98H24a6,6,0,0,0,0,12H42v36H24a6,6,0,0,0,0,12H42v42a14,14,0,0,0,14,14H98v18a6,6,0,0,0,12,0V214h36v18a6,6,0,0,0,12,0V214h42a14,14,0,0,0,14-14V158h18a6,6,0,0,0,0-12Zm-30,54a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V56a2,2,0,0,1,2-2H200a2,2,0,0,1,2,2Z"/></svg></span>
+  <div><h3>The right model for each task</h3><p>Opus for semantic judgement (is this a decision or a fact?), Sonnet for constrained pipelines, Haiku for dispatchers and synthesis. The rule became non-negotiable after an incident.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M205.65,74.08A109.26,109.26,0,0,0,128,42h-.39C67.17,42.21,18,92.06,18,153.13V176a14,14,0,0,0,14,14H224a14,14,0,0,0,14-14V152A109.3,109.3,0,0,0,205.65,74.08ZM226,176a2,2,0,0,1-2,2H115.78l57.07-78.47a6,6,0,0,0-9.7-7.06L100.94,178H32a2,2,0,0,1-2-2V153.13A102.36,102.36,0,0,1,30.62,142H56a6,6,0,0,0,0-12H32.71C42.6,88.4,78.53,56.86,122,54.19V80a6,6,0,0,0,12,0V54.19A98.05,98.05,0,0,1,223.53,130H200a6,6,0,0,0,0,12h25.5c.33,3.3.5,6.64.5,10Z"/></svg></span>
+  <div><h3>Check before waking</h3><p>A Haiku dispatcher checks for work and only launches an Opus sub-agent when there is some. The orchestrator stops at step 0 if nothing changed. The quota is split into windows, and backups moved to a script with no AI.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26C75.29,26,34,49.72,34,80v96c0,30.28,41.29,54,94,54s94-23.72,94-54V80C222,49.72,180.71,26,128,26Zm0,12c44.45,0,82,19.23,82,42s-37.55,42-82,42S46,102.77,46,80,83.55,38,128,38Zm82,138c0,22.77-37.55,42-82,42s-82-19.23-82-42V154.79C62,171.16,92.37,182,128,182s66-10.84,82-27.21Zm0-48c0,22.77-37.55,42-82,42s-82-19.23-82-42V106.79C62,123.16,92.37,134,128,134s66-10.84,82-27.21Z"/></svg></span>
+  <div><h3>A knowledge base that is the source of truth</h3><p>11 object types, 27 JSON Schemas, a validator run after every write with rollback on violation, atomic writes, and a detector for sources that silently stop feeding the system.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M166,112a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm-6,26H96a6,6,0,0,0,0,12h64a6,6,0,0,0,0-12Zm70-10A102,102,0,0,1,79.31,217.65L44.44,229.27a14,14,0,0,1-17.71-17.71l11.62-34.87A102,102,0,1,1,230,128Zm-12,0A90,90,0,1,0,50.08,173.06a6,6,0,0,1,.5,4.91L38.12,215.35a2,2,0,0,0,2.53,2.53L78,205.42a6.2,6.2,0,0,1,1.9-.31,6.09,6.09,0,0,1,3,.81A90,90,0,0,0,218,128Z"/></svg></span>
+  <div><h3>Minutes with guardrails</h3><p>A 657-line skill: a strict rule between decision and fact, misheard names sent for validation, an action with no owner or date treated as an intention, locked writes and loss-free reconstruction.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M196,90a25.87,25.87,0,0,0-14.59,4.49A26,26,0,0,0,142,78.1V44a26,26,0,0,0-52,0v87l-7.53-12.1a26,26,0,0,0-45,26.07l4.67,8.25c34,60,48.07,84.77,93.86,84.77a86.1,86.1,0,0,0,86-86V116A26,26,0,0,0,196,90Zm14,62a74.09,74.09,0,0,1-74,74c-38.8,0-50-19.83-83.42-78.69L47.89,139l0,0A14,14,0,0,1,53,119.88,13.87,13.87,0,0,1,60,118a14,14,0,0,1,12.15,7l.1.17,18.68,30A6,6,0,0,0,102,152V44a14,14,0,0,1,28,0v68a6,6,0,0,0,12,0V100a14,14,0,0,1,28,0v20a6,6,0,0,0,12,0v-4a14,14,0,0,1,28,0Z"/></svg></span>
+  <div><h3>A human who decides, in writing</h3><p>The cockpit never writes to the base. Each answer creates a file that an agent interprets, then archives. An explicit confirmation always beats an inference.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,48V96a6,6,0,0,1-6,6H168a6,6,0,0,1,0-12h33.52L183.47,72a81.51,81.51,0,0,0-57.53-24h-.46A81.5,81.5,0,0,0,68.19,71.28a6,6,0,1,1-8.38-8.58,93.38,93.38,0,0,1,65.67-26.76H126a93.45,93.45,0,0,1,66,27.53l18,18V48a6,6,0,0,1,12,0ZM187.81,184.72a81.5,81.5,0,0,1-57.29,23.34h-.46a81.51,81.51,0,0,1-57.53-24L54.48,166H88a6,6,0,0,0,0-12H40a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V174.48l18,18.05a93.45,93.45,0,0,0,66,27.53h.52a93.38,93.38,0,0,0,65.67-26.76,6,6,0,1,0-8.38-8.58Z"/></svg></span>
+  <div><h3>A system that proposes its own improvements</h3><p>Every week, an agent proposes an improvement to the system. A written self-critique showed it piled up information without challenging it: that led to the redesign described below.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM40,54H216a2,2,0,0,1,2,2V90H38V56A2,2,0,0,1,40,54ZM216,202H40a2,2,0,0,1-2-2V102H218v98A2,2,0,0,1,216,202Z"/></svg></span>
+  <div><h3>A cockpit built and tested with Claude Code</h3><p>20 pages, 68 API endpoints, 23 validation schemas and 401 automated tests, with architecture decision records. It reads the base and never writes to it.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M219.21,160.24a6,6,0,0,0-5.78-.35,22,22,0,1,1-11.05-41.83,22.15,22.15,0,0,1,11.05,2.06A6,6,0,0,0,222,114.7V72a14,14,0,0,0-14-14H169.48a35,35,0,0,0,.52-6,34.1,34.1,0,0,0-10.73-24.78,33.64,33.64,0,0,0-25.45-9.15A34,34,0,0,0,102.54,58H64A14,14,0,0,0,50,72v34.53a34,34,0,0,0-30.79,10.2,34,34,0,0,0,22.31,57.18,34.34,34.34,0,0,0,8.48-.44V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V165.31A6,6,0,0,0,219.21,160.24ZM210,208a2,2,0,0,1-2,2H64a2,2,0,0,1-2-2V165.31a6,6,0,0,0-6-6,5.92,5.92,0,0,0-2.57.58,22,22,0,0,1-31.38-18.46,22,22,0,0,1,31.38-21.31A6,6,0,0,0,62,114.7V72a2,2,0,0,1,2-2h46.69a6,6,0,0,0,5.42-8.57,22.25,22.25,0,0,1-2-11,22,22,0,1,1,41.83,11A6,6,0,0,0,161.3,70H208a2,2,0,0,1,2,2v34.54a34,34,0,0,0-39.93,31.28,33.71,33.71,0,0,0,9.14,25.45A34.15,34.15,0,0,0,210,173.48Z"/></svg></span>
+  <div><h3>Skills packaged as a plugin</h3><p>6 context skills, one per sub-domain, load the right context on demand. They ship in a plugin, alongside about fifteen domain skills.</p></div>
+</li></ul>
+    </section>
+
+    
+    <section class="psec psec--chapter" id="architecture">
+  <h2 class="psec__title">Day, night, and a human in the loop</h2>
+  <div class="flow"><ol class="flow__steps" style="--n:6"><li class="flow__step flow__step--human" data-reveal style="--i:0">
+  <strong>Meetings and documents</strong>
+  <span>Transcripts, files, emails</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:1">
+  <strong>Minutes agent</strong>
+  <span>Structured minutes, during the day</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
+  <strong>Night orchestrator</strong>
+  <span>7 modules in parallel, then 2</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:3">
+  <strong>Schema-checked base</strong>
+  <span>27 JSON Schemas, rollback</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:4">
+  <strong>Briefs and doubts</strong>
+  <span>A daily brief, questions for me</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:5">
+  <strong>Cockpit</strong>
+  <span>I answer, an agent applies</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Handled by AI</span><span><i class="flow__dot flow__dot--code"></i>Deterministic code</span><span><i class="flow__dot flow__dot--human"></i>Human decision</span></p></div>
+</section><section class="psec psec--chapter" id="cockpit">
+  <h2 class="psec__title">The cockpit, where I decide</h2>
+  <div class="prose"><p>Every doubt raised by an agent lands in a queue, with its source, what happens if I confirm it, what happens if I reject it, and a suggested action. My answer becomes a file that an agent applies at night. The screens below use an invented programme.</p></div>
+<figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-doubts.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-doubts.webp" alt="The doubt queue" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The doubt queue: confirm, reject or set aside, with a written answer.</figcaption></figure>
+<div class="pair"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-entity.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-entity.webp" alt="A decision and everything linked to it" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>One object, its links, its source and its change history.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-pipeline.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-pipeline.webp" alt="The health of the agent pipeline" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Pipeline health: each scheduled agent, its last run and the backups.</figcaption></figure></div>
+</section><section class="psec psec--chapter" id="design">
+  <h2 class="psec__title">Measure first, then model in UML</h2>
+  <div class="prose"><p>After six months in production, the weekly self-critique raised a doubt: the base was growing, but was it getting better? Before touching anything, I had the agent measure it. The verdict: the system filled up much faster than it emptied. Only 4 % of questions had ever been closed, 5 % of decisions superseded, and no fact had ever expired.</p><p>We then worked in UML, with Mermaid, so that every diagram stays editable and versioned. The class diagram showed in one picture what the text could not: the dotted links, the ones that close a question or re-examine a decision, did not exist. Out of 1,636 objects, there were exactly three links between objects.</p></div>
+<figure class="fig fig--diagram" data-reveal><button class="frame frame--diagram" type="button" data-zoom="/portfolio/assets/img/pilotage/uml-model-en-light.webp" data-zoom-dark="/portfolio/assets/img/pilotage/uml-model-en-dark.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/uml-model-en-light.webp" alt="UML class diagram of the knowledge base: sources, then facts, questions, decisions and actions linked together" width="1800" height="1524" loading="lazy" decoding="async" class="theme-img theme-img--light" sizes="100vw"><img src="/portfolio/assets/img/pilotage/uml-model-en-dark.webp" alt="" width="1800" height="1524" loading="lazy" decoding="async" class="theme-img theme-img--dark" sizes="100vw"></button><figcaption>Level 0 holds what enters the system, level 1 what an agent can extract from a source. Dotted links are the ones that were missing: they are what lets a question close and a decision be re-examined.</figcaption></figure>
+<div class="prose"><p>The state diagrams made the broken lifecycles visible. A fact had no terminal state, so the base could only grow. A decision went straight from in force to superseded, so none was ever re-examined when the fact behind it fell. Two new states fix this: superseded for a fact, to re-examine for a decision.</p></div>
+<div class="pair"><figure class="fig fig--diagram" data-reveal><button class="frame frame--diagram" type="button" data-zoom="/portfolio/assets/img/pilotage/uml-fact-en-light.webp" data-zoom-dark="/portfolio/assets/img/pilotage/uml-fact-en-dark.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/uml-fact-en-light.webp" alt="State diagram of a fact" width="1224" height="2008" loading="lazy" decoding="async" class="theme-img theme-img--light" sizes="100vw"><img src="/portfolio/assets/img/pilotage/uml-fact-en-dark.webp" alt="" width="1224" height="2008" loading="lazy" decoding="async" class="theme-img theme-img--dark" sizes="100vw"></button><figcaption>The lifecycle of a fact.</figcaption></figure><figure class="fig fig--diagram" data-reveal><button class="frame frame--diagram" type="button" data-zoom="/portfolio/assets/img/pilotage/uml-decision-en-light.webp" data-zoom-dark="/portfolio/assets/img/pilotage/uml-decision-en-dark.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/uml-decision-en-light.webp" alt="State diagram of a decision" width="1190" height="1642" loading="lazy" decoding="async" class="theme-img theme-img--light" sizes="100vw"><img src="/portfolio/assets/img/pilotage/uml-decision-en-dark.webp" alt="" width="1190" height="1642" loading="lazy" decoding="async" class="theme-img theme-img--dark" sizes="100vw"></button><figcaption>The lifecycle of a decision.</figcaption></figure></div>
+</section><section class="psec psec--chapter" id="orchestration">
+  <h2 class="psec__title">Who does what, when, on what basis</h2>
+  <div class="prose"><p>With several agents, the real risk is a tangled machine where nobody knows who decides. So I asked for a sequence diagram per scenario, with every actor, and I challenged each arrow. When the agent wrote that the orchestrator saw everything, I asked what exactly it loads into its context. It had never been defined: the agent measured it, then we wrote it down.</p></div>
+<figure class="fig fig--diagram" data-reveal><button class="frame frame--diagram" type="button" data-zoom="/portfolio/assets/img/pilotage/uml-sequence-en-light.webp" data-zoom-dark="/portfolio/assets/img/pilotage/uml-sequence-en-dark.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/uml-sequence-en-light.webp" alt="UML sequence diagram: collection during the day, arbitration at night" width="1800" height="1387" loading="lazy" decoding="async" class="theme-img theme-img--light" sizes="100vw"><img src="/portfolio/assets/img/pilotage/uml-sequence-en-dark.webp" alt="" width="1800" height="1387" loading="lazy" decoding="async" class="theme-img theme-img--dark" sizes="100vw"></button><figcaption>The meeting scenario. Minutes written in the afternoon are only challenged at night: waiting lets the orchestrator group the points, one run per expert instead of one per point.</figcaption></figure>
+<ul class="minis"><li data-reveal style="--i:0"><h3>A task is defined by what it is given</h3><p>Each step lists its material, its context and its tools. Roles are not decided upfront: they emerge where the context stays stable.</p></li><li data-reveal style="--i:1"><h3>The orchestrator never reads the whole base</h3><p>It reads the agents' reports and the day's delta: 9 changed objects on an ordinary day, 132 in a week. The topic map weighs 16 KB. A small context, by design.</p></li><li data-reveal style="--i:0"><h3>Agents do not call each other</h3><p>An agent works and reports. Only the orchestrator sends orders, grouped by expert: two runs instead of seven on the measured scenario.</p></li><li data-reveal style="--i:1"><h3>A free task is never free</h3><p>A cheap keyword matcher was dropped: it linked 8 % of objects on a word found in a justification. Noise has a cost, because someone has to remove it.</p></li></ul>
+</section><section class="psec psec--chapter" id="plan">
+  <h2 class="psec__title">Build first, clean up after</h2>
+  <div class="prose"><p>The system is in production and the cockpit reads the base all the time, so the plan follows one constraint: nothing may break. The agent checked the code before ordering the steps. Adding a field breaks nothing, because the schemas tolerate unknown fields. Deleting an object type does: one of them is read by 11 backend files and a dedicated page.</p><p>Hence the order: first the additive steps, then the cleanup. And one discovery unlocked everything: the field used to attach objects to topics was read by no file of the cockpit, so it could be replaced by the new link with zero impact.</p></div>
+</section><section class="psec psec--chapter" id="operations">
+  <h2 class="psec__title">Operations in numbers</h2>
+  <div class="prose"><p>Everything the agents do leaves a trace: a manifest per sub-agent run, a result file per scheduled task, a file per doubt. These charts only count those traces. The most telling one is the last: most of the agents' doubts were rejected by me, which is exactly why they ask instead of acting.</p></div>
+<figure class="fig fig--chart" data-reveal><div class="chart">
+  <p class="chart__title">Sub-agents launched each week</p>
+  <p class="chart__sub">587 runs by the night orchestrator since May, about 132 hours of agent work</p>
+  <div class="chart__plot" style="height:220px"><div class="chart__grid" style="bottom:0%"><span>0</span></div><div class="chart__grid" style="bottom:33.33333333333333%"><span>20</span></div><div class="chart__grid" style="bottom:66.66666666666666%"><span>40</span></div><div class="chart__grid" style="bottom:100%"><span>60</span></div><div class="chart__cols" style="--n:21"><div class="chart__col" tabindex="0" role="img" aria-label="Week of 4 May: 43 runs" data-tip="43 runs|Week of 4 May"><i style="height:71.66666666666667%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 11 May: 31 runs" data-tip="31 runs|Week of 11 May"><i style="height:51.66666666666667%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 18 May: 43 runs" data-tip="43 runs|Week of 18 May"><i style="height:71.66666666666667%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 25 May: 29 runs" data-tip="29 runs|Week of 25 May"><i style="height:48.333333333333336%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 1 Jun: 29 runs" data-tip="29 runs|Week of 1 Jun"><i style="height:48.333333333333336%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 8 Jun: 24 runs" data-tip="24 runs|Week of 8 Jun"><i style="height:40%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 15 Jun: 39 runs" data-tip="39 runs|Week of 15 Jun"><i style="height:65%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 22 Jun: 21 runs" data-tip="21 runs|Week of 22 Jun"><i style="height:35%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 29 Jun: 33 runs" data-tip="33 runs|Week of 29 Jun"><i style="height:55.00000000000001%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 6 Jul: 28 runs" data-tip="28 runs|Week of 6 Jul"><i style="height:46.666666666666664%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 13 Jul: 24 runs" data-tip="24 runs|Week of 13 Jul"><i style="height:40%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 20 Jul: 23 runs" data-tip="23 runs|Week of 20 Jul"><i style="height:38.333333333333336%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 27 Jul: 19 runs" data-tip="19 runs|Week of 27 Jul"><i style="height:31.666666666666664%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 3 Aug: 15 runs" data-tip="15 runs|Week of 3 Aug"><i style="height:25%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 10 Aug: 33 runs" data-tip="33 runs|Week of 10 Aug"><i style="height:55.00000000000001%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 17 Aug: 34 runs" data-tip="34 runs|Week of 17 Aug"><i style="height:56.666666666666664%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 24 Aug: 30 runs" data-tip="30 runs|Week of 24 Aug"><i style="height:50%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 31 Aug: 28 runs" data-tip="28 runs|Week of 31 Aug"><i style="height:46.666666666666664%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 7 Sep: 21 runs" data-tip="21 runs|Week of 7 Sep"><i style="height:35%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 14 Sep: 25 runs" data-tip="25 runs|Week of 14 Sep"><i style="height:41.66666666666667%"></i></div><div class="chart__col" tabindex="0" role="img" aria-label="Week of 21 Sep: 15 runs" data-tip="15 runs|Week of 21 Sep"><i style="height:25%"></i></div></div></div>
+  <div class="chart__xaxis"><span style="left:2.380952380952381%">4 May</span><span style="left:35.714285714285715%">22 Jun</span><span style="left:64.28571428571429%">3 Aug</span><span style="left:97.61904761904762%">21 Sep</span></div>
+  <details class="chart__table"><summary>Show the data table</summary><table><caption>Sub-agents launched each week</caption><thead><tr><th scope="col">Week</th><th scope="col">Sub-agent runs</th></tr></thead><tbody><tr><th scope="row">Week of 4 May</th><td>43</td></tr><tr><th scope="row">Week of 11 May</th><td>31</td></tr><tr><th scope="row">Week of 18 May</th><td>43</td></tr><tr><th scope="row">Week of 25 May</th><td>29</td></tr><tr><th scope="row">Week of 1 Jun</th><td>29</td></tr><tr><th scope="row">Week of 8 Jun</th><td>24</td></tr><tr><th scope="row">Week of 15 Jun</th><td>39</td></tr><tr><th scope="row">Week of 22 Jun</th><td>21</td></tr><tr><th scope="row">Week of 29 Jun</th><td>33</td></tr><tr><th scope="row">Week of 6 Jul</th><td>28</td></tr><tr><th scope="row">Week of 13 Jul</th><td>24</td></tr><tr><th scope="row">Week of 20 Jul</th><td>23</td></tr><tr><th scope="row">Week of 27 Jul</th><td>19</td></tr><tr><th scope="row">Week of 3 Aug</th><td>15</td></tr><tr><th scope="row">Week of 10 Aug</th><td>33</td></tr><tr><th scope="row">Week of 17 Aug</th><td>34</td></tr><tr><th scope="row">Week of 24 Aug</th><td>30</td></tr><tr><th scope="row">Week of 31 Aug</th><td>28</td></tr><tr><th scope="row">Week of 7 Sep</th><td>21</td></tr><tr><th scope="row">Week of 14 Sep</th><td>25</td></tr><tr><th scope="row">Week of 21 Sep</th><td>15</td></tr></tbody></table></details>
+</div></figure>
+<div class="pair"><figure class="fig fig--chart" data-reveal><div class="chart">
+  <p class="chart__title">Runs per sub-agent</p>
+  <p class="chart__sub">The nine modules of the night, May to September</p>
+  <div class="chart__rows"><div class="chart__row" tabindex="0" role="img" aria-label="Doubt generation: 91 runs" data-tip="91 runs|Doubt generation">
+  <span class="chart__label">Doubt generation</span>
+  <span class="chart__bar"><i style="width:100%"></i><b>91</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Coherence pass: 88 runs" data-tip="88 runs|Coherence pass">
+  <span class="chart__label">Coherence pass</span>
+  <span class="chart__bar"><i style="width:96.7032967032967%"></i><b>88</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Night wrap-up: 85 runs" data-tip="85 runs|Night wrap-up">
+  <span class="chart__label">Night wrap-up</span>
+  <span class="chart__bar"><i style="width:93.4065934065934%"></i><b>85</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Document doubts: 85 runs" data-tip="85 runs|Document doubts">
+  <span class="chart__label">Document doubts</span>
+  <span class="chart__bar"><i style="width:93.4065934065934%"></i><b>85</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Calendar sync: 83 runs" data-tip="83 runs|Calendar sync">
+  <span class="chart__label">Calendar sync</span>
+  <span class="chart__bar"><i style="width:91.20879120879121%"></i><b>83</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Minutes integration: 53 runs" data-tip="53 runs|Minutes integration">
+  <span class="chart__label">Minutes integration</span>
+  <span class="chart__bar"><i style="width:58.24175824175825%"></i><b>53</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Facts and applications alignment: 38 runs" data-tip="38 runs|Facts and applications alignment">
+  <span class="chart__label">Facts and applications alignment</span>
+  <span class="chart__bar"><i style="width:41.75824175824176%"></i><b>38</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Email ingestion: 36 runs" data-tip="36 runs|Email ingestion">
+  <span class="chart__label">Email ingestion</span>
+  <span class="chart__bar"><i style="width:39.56043956043956%"></i><b>36</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Doubt resolution: 28 runs" data-tip="28 runs|Doubt resolution">
+  <span class="chart__label">Doubt resolution</span>
+  <span class="chart__bar"><i style="width:30.76923076923077%"></i><b>28</b></span>
+</div></div>
+  <details class="chart__table"><summary>Show the data table</summary><table><caption>Runs per sub-agent</caption><thead><tr><th scope="col">Sub-agent</th><th scope="col">Runs</th></tr></thead><tbody><tr><th scope="row">Doubt generation</th><td>91</td></tr><tr><th scope="row">Coherence pass</th><td>88</td></tr><tr><th scope="row">Night wrap-up</th><td>85</td></tr><tr><th scope="row">Document doubts</th><td>85</td></tr><tr><th scope="row">Calendar sync</th><td>83</td></tr><tr><th scope="row">Minutes integration</th><td>53</td></tr><tr><th scope="row">Facts and applications alignment</th><td>38</td></tr><tr><th scope="row">Email ingestion</th><td>36</td></tr><tr><th scope="row">Doubt resolution</th><td>28</td></tr></tbody></table></details>
+</div></figure><figure class="fig fig--chart" data-reveal><div class="chart">
+  <p class="chart__title">What the knowledge base holds</p>
+  <p class="chart__sub">Objects by type, September 2026</p>
+  <div class="chart__rows"><div class="chart__row" tabindex="0" role="img" aria-label="Facts: 799 objects" data-tip="799 objects|Facts">
+  <span class="chart__label">Facts</span>
+  <span class="chart__bar"><i style="width:100%"></i><b>799</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Actions: 644 objects" data-tip="644 objects|Actions">
+  <span class="chart__label">Actions</span>
+  <span class="chart__bar"><i style="width:80.60075093867334%"></i><b>644</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Risks: 235 objects" data-tip="235 objects|Risks">
+  <span class="chart__label">Risks</span>
+  <span class="chart__bar"><i style="width:29.411764705882355%"></i><b>235</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Meetings: 164 objects" data-tip="164 objects|Meetings">
+  <span class="chart__label">Meetings</span>
+  <span class="chart__bar"><i style="width:20.52565707133917%"></i><b>164</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Decisions: 138 objects" data-tip="138 objects|Decisions">
+  <span class="chart__label">Decisions</span>
+  <span class="chart__bar"><i style="width:17.271589486858574%"></i><b>138</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Open questions: 138 objects" data-tip="138 objects|Open questions">
+  <span class="chart__label">Open questions</span>
+  <span class="chart__bar"><i style="width:17.271589486858574%"></i><b>138</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Hypotheses: 13 objects" data-tip="13 objects|Hypotheses">
+  <span class="chart__label">Hypotheses</span>
+  <span class="chart__bar"><i style="width:1.6270337922403004%"></i><b>13</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Blockers: 3 objects" data-tip="3 objects|Blockers">
+  <span class="chart__label">Blockers</span>
+  <span class="chart__bar"><i style="width:0.37546933667083854%"></i><b>3</b></span>
+</div></div>
+  <details class="chart__table"><summary>Show the data table</summary><table><caption>What the knowledge base holds</caption><thead><tr><th scope="col">Type</th><th scope="col">Objects</th></tr></thead><tbody><tr><th scope="row">Facts</th><td>799</td></tr><tr><th scope="row">Actions</th><td>644</td></tr><tr><th scope="row">Risks</th><td>235</td></tr><tr><th scope="row">Meetings</th><td>164</td></tr><tr><th scope="row">Decisions</th><td>138</td></tr><tr><th scope="row">Open questions</th><td>138</td></tr><tr><th scope="row">Hypotheses</th><td>13</td></tr><tr><th scope="row">Blockers</th><td>3</td></tr></tbody></table></details>
+</div></figure></div>
+<figure class="fig fig--chart" data-reveal><div class="chart">
+  <p class="chart__title">511 doubts raised by the agents</p>
+  <p class="chart__sub">What became of them after my answer</p>
+  <div class="chart__rows"><div class="chart__row" tabindex="0" role="img" aria-label="Rejected: 207 doubts" data-tip="207 doubts|Rejected">
+  <span class="chart__label">Rejected</span>
+  <span class="chart__bar"><i style="width:100%"></i><b>207</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Waiting for an answer: 121 doubts" data-tip="121 doubts|Waiting for an answer">
+  <span class="chart__label">Waiting for an answer</span>
+  <span class="chart__bar"><i style="width:58.454106280193244%"></i><b>121</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Set aside: 101 doubts" data-tip="101 doubts|Set aside">
+  <span class="chart__label">Set aside</span>
+  <span class="chart__bar"><i style="width:48.792270531400966%"></i><b>101</b></span>
+</div><div class="chart__row" tabindex="0" role="img" aria-label="Confirmed: 81 doubts" data-tip="81 doubts|Confirmed">
+  <span class="chart__label">Confirmed</span>
+  <span class="chart__bar"><i style="width:39.130434782608695%"></i><b>81</b></span>
+</div></div>
+  <details class="chart__table"><summary>Show the data table</summary><table><caption>511 doubts raised by the agents</caption><thead><tr><th scope="col">Outcome</th><th scope="col">Doubts</th></tr></thead><tbody><tr><th scope="row">Rejected</th><td>207</td></tr><tr><th scope="row">Waiting for an answer</th><td>121</td></tr><tr><th scope="row">Set aside</th><td>101</td></tr><tr><th scope="row">Confirmed</th><td>81</td></tr></tbody></table></details>
+</div></figure>
+</section>
+    <section class="psec"><h2 class="psec__title">What was hard</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>The sub-agent that claimed a folder did not exist</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>Run on a model that was too light, a module wrote &quot;folder missing&quot; while 87 files were there. Three meetings vanished from the brief.</dd></div>
+    <div><dt>What I did</dt><dd>Models enforced per module, the initial check run directly, cross-checking by script, automatic retry on a false absence, and a loud stop if the path is empty.</dd></div>
+    <div><dt>The result</dt><dd>A completeness check now recomputes every module's condition.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>The invented approvals</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>A fallback matched unaddressed feedback to proposals in chronological order. Five proposals were wrongly &quot;confirmed&quot;, one of them implemented.</dd></div>
+    <div><dt>What I did</dt><dd>Inferring intent is banned: only an explicit verdict field counts.</dd></div>
+    <div><dt>The result</dt><dd>The wrong implementation was reverted the same day, and the rule now applies system-wide.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:0">
+  <h3>Never forgetting means piling everything up</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>The &quot;never deduplicate&quot; rule had produced 253 open actions, 110 of them already resolved and 72 duplicates.</dd></div>
+    <div><dt>What I did</dt><dd>Rule reversed: attach to what exists, close only with evidence, and raise a doubt when the resolution is only inferred.</dd></div>
+    <div><dt>The result</dt><dd>An action list a human can work with again.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>A single writer</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>Doubts written by several agents on several machines caused 4 duplication and corruption incidents.</dd></div>
+    <div><dt>What I did</dt><dd>Only one process may now write, with deduplication, a monotonic ID, a lock and atomic writes.</dd></div>
+    <div><dt>The result</dt><dd>Load test: 50 parallel calls in 5 variants produce exactly 5 IDs.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">By the numbers</h2>
+<dl class="figures"><div><dt>sub-agent runs by the night orchestrator</dt><dd>587</dd></div><div><dt>doubts raised by agents instead of guessing</dt><dd>511</dd></div><div><dt>JSON Schemas validating the base</dt><dd>27</dd></div><div><dt>automated tests in the cockpit</dt><dd>401</dd></div></dl>
+<p class="note">Technical figures only. No programme data is published.</p></section>
+    <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-brief.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-brief.webp" alt="The daily brief written by an agent" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The daily brief, written by an agent every morning.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-harmonisation.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-harmonisation.webp" alt="Topic scorecard and completeness matrix" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Completeness by domain: where decisions, risks or facts are missing.</figcaption></figure><figure class="fig fig--wide" data-reveal><button class="frame frame--panel frame--long" type="button" data-zoom="/portfolio/assets/img/pilotage/cockpit-graph-long.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/pilotage/cockpit-graph-long.webp" alt="The knowledge graph around one decision" width="1800" height="1475" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The knowledge graph around one decision.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Multi-agent orchestration</li><li>Knowledge base design</li><li>UML modelling with an agent</li><li>Haiku, Sonnet, Opus routing</li><li>Check before waking</li><li>Schema validation and rollback</li><li>Human in the loop</li><li>Anti-hallucination guardrails</li><li>Self-improving system</li><li>Skills and plugins</li></ul></section>
+
+    <nav class="pnav" aria-label="Projects">
+      <a href="/portfolio/projects/ppc-audit/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>Advertising audit copilot</span></a>
+      <a href="/portfolio/projects/agent-platform/" class="pnav__next"><small>Next project<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>24/7 agent platform</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Static site written with Claude Code, no framework, no tracker.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Enlarge image">
+  <img alt="">
+  <button type="button" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=mufcr3cr" defer></script>
+</body>
+</html>

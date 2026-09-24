@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recherche multi-agents avec vérification adverse | Bruno Lesgourgues</title>
+<meta name="description" content="218 agents orchestrés par scripts pour générer, attaquer et classer 50 idées de produits, avec des sceptiques chargés de les réfuter.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/multi-agent-research/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/multi-agent-research/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/multi-agent-research/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/multi-agent-research/">
+<meta property="og:title" content="Recherche multi-agents avec vérification adverse | Bruno Lesgourgues">
+<meta property="og:description" content="218 agents orchestrés par scripts pour générer, attaquer et classer 50 idées de produits, avec des sceptiques chargés de les réfuter.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/etude/cover.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=mufcr3cr">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/fr/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/fr/projets/" aria-current="page">Projets</a></li><li><a href="/portfolio/fr/#method">Méthode</a></li><li><a href="/portfolio/fr/#tools">Outils</a></li><li><a href="/portfolio/fr/#contact">À propos</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Langue"><a class="lang" href="/portfolio/projects/multi-agent-research/" hreflang="en" lang="en">EN</a><span class="lang is-current" aria-current="true">FR</span><a class="lang" href="/portfolio/es/proyectos/multi-agent-research/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/fr/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Tous les projets</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.6,148.8a6,6,0,0,1-8.4-1.2A53.58,53.58,0,0,0,192,126a6,6,0,0,1,0-12,26,26,0,1,0-25.18-32.5,6,6,0,0,1-11.62-3,38,38,0,1,1,59.91,39.63A65.69,65.69,0,0,1,244.8,140.4,6,6,0,0,1,243.6,148.8ZM189.19,213a6,6,0,0,1-2.19,8.2,5.9,5.9,0,0,1-3,.81,6,6,0,0,1-5.2-3,59,59,0,0,0-101.62,0,6,6,0,1,1-10.38-6A70.1,70.1,0,0,1,103,182.55a46,46,0,1,1,50.1,0A70.1,70.1,0,0,1,189.19,213ZM128,178a34,34,0,1,0-34-34A34,34,0,0,0,128,178ZM70,120a6,6,0,0,0-6-6A26,26,0,1,1,89.18,81.49a6,6,0,1,0,11.62-3,38,38,0,1,0-59.91,39.63A65.69,65.69,0,0,0,11.2,140.4a6,6,0,1,0,9.6,7.2A53.58,53.58,0,0,1,64,126,6,6,0,0,0,70,120Z"/></svg></span>
+      <h1 class="intro__title">Recherche multi-agents avec vérification adverse</h1>
+      <p class="intro__lead">218 agents orchestrés par scripts pour générer, attaquer et classer 50 idées de produits, avec des sceptiques chargés de les réfuter.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Catégorie</dt><dd>Recherche</dd></div>
+          <div><dt>Période</dt><dd>Septembre 2026</dd></div>
+          <div><dt>Statut</dt><dd>Terminé</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Claude Code, Workflows, Sous-agents, Recherche web</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/etude/cover.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/etude/cover.webp" alt="Le rapport final de l'étude multi-agents" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">Le projet</h2>
+      <div class="prose prose--lead"><p>Une question ouverte : quelles activités tirer de mes compétences ? Plutôt que de demander un avis à un modèle, j'ai monté une recherche en quatre tours, où chaque idée doit survivre à trois sceptiques qui cherchent à la réfuter, sources à l'appui.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">Ce que j'ai fait avec l'IA</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M160,110h48a14,14,0,0,0,14-14V48a14,14,0,0,0-14-14H160a14,14,0,0,0-14,14V66H128a22,22,0,0,0-22,22v34H70V112A14,14,0,0,0,56,98H24a14,14,0,0,0-14,14v32a14,14,0,0,0,14,14H56a14,14,0,0,0,14-14V134h36v34a22,22,0,0,0,22,22h18v18a14,14,0,0,0,14,14h48a14,14,0,0,0,14-14V160a14,14,0,0,0-14-14H160a14,14,0,0,0-14,14v18H128a10,10,0,0,1-10-10V88a10,10,0,0,1,10-10h18V96A14,14,0,0,0,160,110ZM58,144a2,2,0,0,1-2,2H24a2,2,0,0,1-2-2V112a2,2,0,0,1,2-2H56a2,2,0,0,1,2,2Zm100,16a2,2,0,0,1,2-2h48a2,2,0,0,1,2,2v48a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2Zm0-112a2,2,0,0,1,2-2h48a2,2,0,0,1,2,2V96a2,2,0,0,1-2,2H160a2,2,0,0,1-2-2Z"/></svg></span>
+  <div><h3>Des workflows déterministes</h3><p>Des scripts orchestrent les agents en pipeline : chaque idée passe à la vérification dès qu'elle est prête, sans attendre les autres.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M237.57,133.77l-32-80h0a6,6,0,0,0-6.86-3.63L134,64.52V40a6,6,0,0,0-12,0V67.19l-67.3,15a6,6,0,0,0-4.27,3.63h0v0l-32,80A6.1,6.1,0,0,0,18,168c0,21.86,23.31,30,38,30s38-8.14,38-30a6.1,6.1,0,0,0-.43-2.23L64.19,92.33,122,79.48V210H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12H134V76.81l56.21-12.49-27.78,69.45A6.1,6.1,0,0,0,162,136c0,21.86,23.31,30,38,30s38-8.14,38-30A6.1,6.1,0,0,0,237.57,133.77ZM56,186a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C81.06,182.85,62.58,186,56,186Zm144-32a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C225.06,150.85,206.58,154,200,154Z"/></svg></span>
+  <div><h3>Trois lentilles sceptiques</h3><p>Marché, contraintes et faisabilité. Chaque sceptique doit réfuter par défaut s'il n'a pas de preuve, et corriger les chiffres avec des sources.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></svg></span>
+  <div><h3>Une calibration par des données réelles</h3><p>Avant toute idée, des agents ont établi les revenus médians réels par catégorie, pour juger chaque promesse contre la réalité du marché.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,48V96a6,6,0,0,1-6,6H168a6,6,0,0,1,0-12h33.52L183.47,72a81.51,81.51,0,0,0-57.53-24h-.46A81.5,81.5,0,0,0,68.19,71.28a6,6,0,1,1-8.38-8.58,93.38,93.38,0,0,1,65.67-26.76H126a93.45,93.45,0,0,1,66,27.53l18,18V48a6,6,0,0,1,12,0ZM187.81,184.72a81.5,81.5,0,0,1-57.29,23.34h-.46a81.51,81.51,0,0,1-57.53-24L54.48,166H88a6,6,0,0,0,0-12H40a6,6,0,0,0-6,6v48a6,6,0,0,0,12,0V174.48l18,18.05a93.45,93.45,0,0,0,66,27.53h.52a93.38,93.38,0,0,0,65.67-26.76,6,6,0,1,0-8.38-8.58Z"/></svg></span>
+  <div><h3>Reprise après incident</h3><p>Quand un tour a échoué sur une limite de débit, le journal du workflow a permis de reprendre sans relancer les agents déjà terminés.</p></div>
+</li></ul>
+    </section>
+
+    
+    
+    
+    <section class="psec"><h2 class="psec__title">En chiffres</h2>
+<dl class="figures"><div><dt>agents sur 4 tours</dt><dd>218</dd></div><div><dt>verdicts de sceptiques</dt><dd>150</dd></div><div><dt>tokens de sous-agents</dt><dd>24 M</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Captures</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/etude/classement.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/etude/classement.webp" alt="Le classement des idées vérifiées" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Chaque idée est passée devant trois sceptiques avant toute recommandation.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/etude/verdict-sceptique.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/etude/verdict-sceptique.webp" alt="La réfutation d'un sceptique, avec ses sources" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Une réfutation, avec ses sources. Les idées réfutées restent écrites.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">Compétences IA démontrées</h2><ul class="tags"><li>Orchestration par workflow</li><li>Vérification adverse</li><li>Calibration par base rates</li><li>Recherche web sourcée</li><li>Reprise après incident</li></ul></section>
+
+    <nav class="pnav" aria-label="Projets">
+      <a href="/portfolio/fr/projets/arcade-migration/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Projet précédent</small><span>Migration de borne pilotée par un agent</span></a>
+      <a href="/portfolio/fr/projets/ppc-audit/" class="pnav__next"><small>Projet suivant<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Copilote d'audit publicitaire</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Site statique écrit avec Claude Code, sans framework ni traceur.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Agrandir l'image">
+  <img alt="">
+  <button type="button" aria-label="Fermer"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=mufcr3cr" defer></script>
+</body>
+</html>

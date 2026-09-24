@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistente administrativo de autónoma | Bruno Lesgourgues</title>
+<meta name="description" content="Un orquestador de Claude y tareas programadas llevan el papeleo de una autónoma de mi hogar en España: facturas, declaraciones trimestrales, plazos. Cada hallazgo se verifica antes de llegarme.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/admin-assistant/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/admin-assistant/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/admin-assistant/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/admin-assistant/">
+<meta property="og:title" content="Asistente administrativo de autónoma | Bruno Lesgourgues">
+<meta property="og:description" content="Un orquestador de Claude y tareas programadas llevan el papeleo de una autónoma de mi hogar en España: facturas, declaraciones trimestrales, plazos. Cada hallazgo se verifica antes de llegarme.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/autonomo/cover.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=mufcr3cr">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Ir al contenido</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/es/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/es/proyectos/" aria-current="page">Proyectos</a></li><li><a href="/portfolio/es/#method">Método</a></li><li><a href="/portfolio/es/#tools">Herramientas</a></li><li><a href="/portfolio/es/#contact">Sobre mí</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Idioma"><a class="lang" href="/portfolio/projects/admin-assistant/" hreflang="en" lang="en">EN</a><a class="lang" href="/portfolio/fr/projets/admin-assistant/" hreflang="fr" lang="fr">FR</a><span class="lang is-current" aria-current="true">ES</span></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/es/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Todos los proyectos</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M182,104a6,6,0,0,1-6,6H80a6,6,0,0,1,0-12h96A6,6,0,0,1,182,104Zm-6,26H80a6,6,0,0,0,0,12h96a6,6,0,0,0,0-12Zm54-74V208a6,6,0,0,1-2.85,5.1,5.93,5.93,0,0,1-3.15.9,6,6,0,0,1-2.68-.63L192,198.71l-29.32,14.66a6,6,0,0,1-5.36,0L128,198.71,98.68,213.37a6,6,0,0,1-5.36,0L64,198.71,34.68,213.37A6,6,0,0,1,26,208V56A14,14,0,0,1,40,42H216A14,14,0,0,1,230,56Zm-12,0a2,2,0,0,0-2-2H40a2,2,0,0,0-2,2V198.29l23.32-11.66a6,6,0,0,1,5.36,0L96,201.29l29.32-14.66a6,6,0,0,1,5.36,0L160,201.29l29.32-14.66a6,6,0,0,1,5.36,0L218,198.29Z"/></svg></span>
+      <h1 class="intro__title">Asistente administrativo de autónoma</h1>
+      <p class="intro__lead">Un orquestador de Claude y tareas programadas llevan el papeleo de una autónoma de mi hogar en España: facturas, declaraciones trimestrales, plazos. Cada hallazgo se verifica antes de llegarme.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Categoría</dt><dd>Sistemas de agentes</dd></div>
+          <div><dt>Periodo</dt><dd>De julio de 2026 a hoy</dd></div>
+          <div><dt>Estado</dt><dd>En uso diario</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Tecnologías</span>Claude Cowork, Claude Code, Python, WeasyPrint, Excel, Markdown</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/autonomo/cover.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/autonomo/cover.webp" alt="El panel del asistente, con una autónoma ficticia" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">El proyecto</h2>
+      <div class="prose prose--lead"><p>En España, una autónoma presenta declaraciones trimestrales, lleva registros y emite facturas numeradas sin huecos. Para una autónoma de mi hogar, construí un asistente que vigila y redacta mientras yo decido.</p><p>Una sesión de Claude hace de orquestador. Las tareas programadas se ejecutan cada semana, cada mes y cada trimestre y dejan sus hallazgos en una bandeja de entrada. Al empezar cada sesión, el orquestador comprueba cada hallazgo nuevo en los archivos antes de decirme nada.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">Lo que hice con IA</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H208a2,2,0,0,1,2,2V154H179.31a13.94,13.94,0,0,0-9.9,4.1L150.1,177.41a2,2,0,0,1-1.41.59H107.31a2,2,0,0,1-1.41-.58L86.59,158.1a13.94,13.94,0,0,0-9.9-4.1H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V166H76.69a2,2,0,0,1,1.41.58L97.41,185.9a13.94,13.94,0,0,0,9.9,4.1h41.38a13.94,13.94,0,0,0,9.9-4.1l19.31-19.31a2,2,0,0,1,1.41-.59H210v42A2,2,0,0,1,208,210Z"/></svg></span>
+  <div><h3>Una bandeja entre tareas y sesión</h3><p>Una tarea que solo escribe en un chat pierde su hallazgo al cerrarse la ventana. Cada hallazgo se convierte en una línea fechada con su tarea, su gravedad y su estado. Sin duplicados, y una línea se cierra con fecha cuando el problema desaparece.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"/></svg></span>
+  <div><h3>Un hallazgo es una hipótesis, no un hecho</h3><p>Antes de transmitir nada, el orquestador busca en el registro de temas resueltos y comprueba al menos una cifra en los archivos. Una tarea que escribe «no es una falsa alarma» se certifica a sí misma: justo ahí hay que verificar.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></svg></span>
+  <div><h3>Un único registro de decisiones y acciones</h3><p>Acciones y decisiones numeradas, un índice de temas resueltos y un archivo. El asistente propone y cuantifica cada propuesta. Yo decido, y no se hace nada fiscal sin mi aprobación.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M182,104a6,6,0,0,1-6,6H80a6,6,0,0,1,0-12h96A6,6,0,0,1,182,104Zm-6,26H80a6,6,0,0,0,0,12h96a6,6,0,0,0,0-12Zm54-74V208a6,6,0,0,1-2.85,5.1,5.93,5.93,0,0,1-3.15.9,6,6,0,0,1-2.68-.63L192,198.71l-29.32,14.66a6,6,0,0,1-5.36,0L128,198.71,98.68,213.37a6,6,0,0,1-5.36,0L64,198.71,34.68,213.37A6,6,0,0,1,26,208V56A14,14,0,0,1,40,42H216A14,14,0,0,1,230,56Zm-12,0a2,2,0,0,0-2-2H40a2,2,0,0,0-2,2V198.29l23.32-11.66a6,6,0,0,1,5.36,0L96,201.29l29.32-14.66a6,6,0,0,1,5.36,0L160,201.29l29.32-14.66a6,6,0,0,1,5.36,0L218,198.29Z"/></svg></span>
+  <div><h3>Facturas sin huecos</h3><p>Las facturas salen de un generador que toma el siguiente número libre, rechaza una serie que no cuadra con el cliente o un total que no cuadra, y avisa si la factura pasa a una segunda página. El libro registro y el registro de números se actualizan cada vez.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M138,128a10,10,0,1,1-10-10A10,10,0,0,1,138,128ZM84,118a10,10,0,1,0,10,10A10,10,0,0,0,84,118Zm88,0a10,10,0,1,0,10,10A10,10,0,0,0,172,118Zm58,10A102,102,0,0,1,79.31,217.65L44.44,229.27a14,14,0,0,1-17.71-17.71l11.62-34.87A102,102,0,1,1,230,128Zm-12,0A90,90,0,1,0,50.08,173.06a6,6,0,0,1,.5,4.91L38.12,215.35a2,2,0,0,0,2.53,2.53L78,205.42a6.2,6.2,0,0,1,1.9-.31,6.09,6.09,0,0,1,3,.81A90,90,0,0,0,218,128Z"/></svg></span>
+  <div><h3>Quedarse en mi tema</h3><p>El orquestador responde primero a mi pregunta y menciona las novedades de la bandeja al final. Nunca cambia de tema porque un punto «encaje»: la regla está escrita porque ya había pasado.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M176,58H80a6,6,0,0,0-6,6v48a6,6,0,0,0,6,6h96a6,6,0,0,0,6-6V64A6,6,0,0,0,176,58Zm-6,48H86V70h84Zm30-80H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V40A14,14,0,0,0,200,26Zm2,190a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H200a2,2,0,0,1,2,2ZM98,148a10,10,0,1,1-10-10A10,10,0,0,1,98,148Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,138,148Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,178,148ZM98,188a10,10,0,1,1-10-10A10,10,0,0,1,98,188Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,138,188Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,178,188Z"/></svg></span>
+  <div><h3>Scripts que no presentan nada</h3><p>Los scripts trimestrales reproducen al céntimo las declaraciones ya presentadas y avisan de que no presentan nada. El clasificador de documentos solo simula mientras no se le pida expresamente actuar.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,188.24l-32,32a6,6,0,0,1-8.48,0l-32-32a6,6,0,0,1,8.48-8.48L186,201.51v-63l-58-58-58,58v63l21.76-21.75a6,6,0,0,1,8.48,8.48l-32,32a6,6,0,0,1-8.48,0l-32-32a6,6,0,0,1,8.48-8.48L58,201.51V136a6,6,0,0,1,1.76-4.24L122,69.51V24a6,6,0,0,1,12,0V69.51l62.24,62.25A6,6,0,0,1,198,136v65.51l21.76-21.75a6,6,0,0,1,8.48,8.48Z"/></svg></span>
+  <div><h3>Un registro a la medida del contexto</h3><p>Con 58 000 caracteres, el registro ya no cabía en una sola lectura, lo que rompía el primer paso de la salvaguarda. Se dividió en un registro vivo y un archivo, comprobando que cada identificador seguía presente.</p></div>
+</li></ul>
+    </section>
+
+    <section class="psec"><h2 class="psec__title">De un hallazgo a una decisión</h2><div class="flow"><ol class="flow__steps" style="--n:5"><li class="flow__step flow__step--ai" data-reveal style="--i:0">
+  <strong>Tareas programadas</strong>
+  <span>Semanales, mensuales, trimestrales</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:1">
+  <strong>Bandeja de entrada</strong>
+  <span>Una línea fechada por hallazgo</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
+  <strong>Verificación</strong>
+  <span>Registro, cifras, archivos</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:3">
+  <strong>Registro</strong>
+  <span>Acción o decisión numerada</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:4">
+  <strong>Yo decido</strong>
+  <span>Solo lo que queda por hacer</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>A cargo de la IA</span><span><i class="flow__dot flow__dot--code"></i>Código determinista</span><span><i class="flow__dot flow__dot--human"></i>Decisión humana</span></p></div></section>
+    
+    <section class="psec"><h2 class="psec__title">Lo que fue difícil</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>La falsa alarma</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Una tarea programada lanzó una alerta urgente que habría inmovilizado unos 2400 euros para nada. Se transmitió sin verificarla.</dd></div>
+    <div><dt>Lo que hice</dt><dd>Una salvaguarda escrita: un hallazgo es una hipótesis. Se comprueban el registro y al menos una cifra antes de transmitir nada.</dd></div>
+    <div><dt>El resultado</dt><dd>Solo me llega lo que de verdad queda por hacer.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Un tema resuelto presentado como nuevo</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Un recordatorio sobre un tema ya decidido se transmitió como un descubrimiento.</dd></div>
+    <div><dt>Lo que hice</dt><dd>Un índice de temas resueltos, una línea por decisión cerrada, consultado antes de transmitir. Reabrir un tema debe anunciarse como tal.</dd></div>
+    <div><dt>El resultado</dt><dd>Los temas resueltos ya no vuelven disfrazados de novedad.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:0">
+  <h3>Seis estimaciones en tres semanas</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Una estimación fiscal anual, recalculada con datos incompletos, cambió seis veces en tres semanas. Esa cifra cambiante costó la confianza en todo el expediente.</dd></div>
+    <div><dt>Lo que hice</dt><dd>La estimación queda congelada como una horquilla, está prohibido recalcularla y hay una única revisión fechada cuando se cierre el año.</dd></div>
+    <div><dt>El resultado</dt><dd>Una horquilla estable en lugar de una falsa precisión.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Una regla contradicha por la primera factura real</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Una regla de declaración se había escrito razonando. La primera factura real recibida mostró lo contrario.</dd></div>
+    <div><dt>Lo que hice</dt><dd>La regla se corrigió, se fechó y ahora cita el documento en el que se basa.</dd></div>
+    <div><dt>El resultado</dt><dd>Un documento real siempre prevalece sobre un razonamiento.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">En cifras</h2>
+<dl class="figures"><div><dt>tareas programadas, de semanales a anuales</dt><dd>11</dd></div><div><dt>hallazgos revisados: 17 promovidos, 9 rechazados</dt><dd>48</dd></div><div><dt>acciones y decisiones numeradas en el registro</dt><dd>52</dd></div><div><dt>huecos en la numeración de facturas</dt><dd>0</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Capturas</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/autonomo/inbox-constats.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/autonomo/inbox-constats.webp" alt="La bandeja de hallazgos" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>La bandeja: cada hallazgo de una tarea programada y su estado tras la verificación.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/autonomo/registre-decisions.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/autonomo/registre-decisions.webp" alt="El registro de decisiones y acciones" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>El registro: lo que debo validar, las acciones abiertas y lo que está en espera.</figcaption></figure><figure class="fig fig--wide" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/autonomo/garde-fou-orchestrateur.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/autonomo/garde-fou-orchestrateur.webp" alt="Las instrucciones del orquestador" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Los cinco pasos del orquestador y su salvaguarda contra las falsas alarmas. Todo el contenido mostrado es ficticio.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">Competencias de IA demostradas</h2><ul class="tags"><li>Agentes programados</li><li>Persona en el circuito</li><li>Verificar antes de transmitir</li><li>Registro de decisiones</li><li>Salvaguardas contra falsas alarmas</li><li>Sin falsa precisión</li></ul></section>
+
+    <nav class="pnav" aria-label="Proyectos">
+      <a href="/portfolio/es/proyectos/agent-platform/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Proyecto anterior</small><span>Plataforma de agentes 24/7</span></a>
+      <a href="/portfolio/es/proyectos/etoilia/" class="pnav__next"><small>Proyecto siguiente<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Étoilia</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Sitio estático escrito con Claude Code, sin framework ni rastreadores.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Ampliar la imagen">
+  <img alt="">
+  <button type="button" aria-label="Cerrar"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=mufcr3cr" defer></script>
+</body>
+</html>

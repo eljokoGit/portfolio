@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sauvegarde cloud prouvée | Bruno Lesgourgues</title>
+<meta name="description" content="Une sauvegarde qui prouve ce qu'elle a sauvegardé, puis l'enquête forensique, menée avec deux agents, qui a expliqué pourquoi le client officiel détruisait des fichiers.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/cloud-backup/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/cloud-backup/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/cloud-backup/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/cloud-backup/">
+<meta property="og:title" content="Sauvegarde cloud prouvée | Bruno Lesgourgues">
+<meta property="og:description" content="Une sauvegarde qui prouve ce qu'elle a sauvegardé, puis l'enquête forensique, menée avec deux agents, qui a expliqué pourquoi le client officiel détruisait des fichiers.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/pcloud/cover.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=mufcr3cr">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/fr/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/fr/projets/" aria-current="page">Projets</a></li><li><a href="/portfolio/fr/#method">Méthode</a></li><li><a href="/portfolio/fr/#tools">Outils</a></li><li><a href="/portfolio/fr/#contact">À propos</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Langue"><a class="lang" href="/portfolio/projects/cloud-backup/" hreflang="en" lang="en">EN</a><span class="lang is-current" aria-current="true">FR</span><a class="lang" href="/portfolio/es/proyectos/cloud-backup/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/fr/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Tous les projets</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M160,42A86.11,86.11,0,0,0,82.43,90.88,62,62,0,1,0,72,214h88a86,86,0,0,0,0-172Zm0,160H72a50,50,0,0,1,0-100,50.67,50.67,0,0,1,5.91.35A85.61,85.61,0,0,0,74,128a6,6,0,0,0,12,0,74,74,0,1,1,74,74Zm36.24-94.24a6,6,0,0,1,0,8.48l-48,48a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L144,151.51l43.76-43.75A6,6,0,0,1,196.24,107.76Z"/></svg></span>
+      <h1 class="intro__title">Sauvegarde cloud prouvée</h1>
+      <p class="intro__lead">Une sauvegarde qui prouve ce qu'elle a sauvegardé, puis l'enquête forensique, menée avec deux agents, qui a expliqué pourquoi le client officiel détruisait des fichiers.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Catégorie</dt><dd>Données</dd></div>
+          <div><dt>Période</dt><dd>Août et septembre 2026</dd></div>
+          <div><dt>Statut</dt><dd>Application publiée en open source, enquête close</dd></div>
+        </dl>
+        <a class="pill pill--link phead__cta" href="https://github.com/eljokoGit/pcloud-rclone-sync" rel="noopener">Voir le code sur GitHub<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,104a6,6,0,0,1-12,0V54.49l-69.75,69.75a6,6,0,0,1-8.48-8.48L201.51,46H152a6,6,0,0,1,0-12h64a6,6,0,0,1,6,6Zm-38,26a6,6,0,0,0-6,6v72a2,2,0,0,1-2,2H48a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2h72a6,6,0,0,0,0-12H48A14,14,0,0,0,34,80V208a14,14,0,0,0,14,14H176a14,14,0,0,0,14-14V136A6,6,0,0,0,184,130Z"/></svg></a>
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Python, FastAPI, rclone, SQLite, NTFS, PowerShell</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pcloud/cover.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/pcloud/cover.webp" alt="Un plan de sauvegarde à valider avant tout transfert, dossiers fictifs" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">Le projet</h2>
+      <div class="prose prose--lead"><p>L'application pilote rclone pour sauvegarder des dossiers vers le cloud. Elle simule d'abord, présente un bilan chiffré, demande validation, puis exécute et vérifie de façon indépendante.</p><p>Quand le client officiel du cloud a détruit des milliers de fichiers, l'enquête a reconstitué son fonctionnement interne jusqu'à expliquer la destruction, requête SQL par requête SQL.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">Ce que j'ai fait avec l'IA</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M166,112a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm-6,26H96a6,6,0,0,0,0,12h64a6,6,0,0,0,0-12Zm70-10A102,102,0,0,1,79.31,217.65L44.44,229.27a14,14,0,0,1-17.71-17.71l11.62-34.87A102,102,0,1,1,230,128Zm-12,0A90,90,0,1,0,50.08,173.06a6,6,0,0,1,.5,4.91L38.12,215.35a2,2,0,0,0,2.53,2.53L78,205.42a6.2,6.2,0,0,1,1.9-.31,6.09,6.09,0,0,1,3,.81A90,90,0,0,0,218,128Z"/></svg></span>
+  <div><h3>Une passation qui fixe les règles</h3><p>Le prompt de passation à Claude Code pose trois règles : vérifier plutôt que supposer, tester avec un vrai rclone et pas des mocks, ne jamais contourner les protections. Et : « dis-moi quand tu n'es pas sûr ».</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M70,128a132.68,132.68,0,0,1-14,59.58,6,6,0,0,1-5.38,3.33,6,6,0,0,1-5.36-8.67A120.74,120.74,0,0,0,58,128,69.72,69.72,0,0,1,84.25,73.36a6,6,0,0,1,7.51,9.37A57.73,57.73,0,0,0,70,128Zm58-6a6,6,0,0,0-6,6,186.07,186.07,0,0,1-23.23,90.07,6,6,0,0,0,10.5,5.82A198.14,198.14,0,0,0,134,128,6,6,0,0,0,128,122Zm0-32a38,38,0,0,0-38,38,6,6,0,0,0,12,0,26,26,0,0,1,52,0,216.06,216.06,0,0,1-20.71,92.85A6,6,0,1,0,144.16,226,227.94,227.94,0,0,0,166,128,38,38,0,0,0,128,90Zm0-64A102.11,102.11,0,0,0,26,128a90,90,0,0,1-5.12,30,6,6,0,1,0,11.31,4A101.83,101.83,0,0,0,38,128a90,90,0,0,1,180,0,284.7,284.7,0,0,1-5.33,54.84,6,6,0,0,0,4.72,7.05,6.8,6.8,0,0,0,1.17.11,6,6,0,0,0,5.88-4.84A295.92,295.92,0,0,0,230,128,102.12,102.12,0,0,0,128,26ZM94,154.13a6,6,0,0,0-7.07,4.69,152.82,152.82,0,0,1-17.44,46,6,6,0,0,0,10.4,6,164.77,164.77,0,0,0,18.8-49.65A6,6,0,0,0,94,154.13ZM128,58a70.76,70.76,0,0,0-8.75.54,6,6,0,1,0,1.49,11.91A58,58,0,0,1,186,128a252.27,252.27,0,0,1-1.94,31.26,6,6,0,0,0,5.21,6.69,6.59,6.59,0,0,0,.75,0,6,6,0,0,0,5.95-5.26A266.46,266.46,0,0,0,198,128,70.08,70.08,0,0,0,128,58ZM185.44,186.2a6,6,0,0,0-7.31,4.31c-1.47,5.74-3.18,11.49-5.06,17.09a6,6,0,0,0,11.38,3.82c2-5.88,3.75-11.9,5.3-17.92A6,6,0,0,0,185.44,186.2Z"/></svg></span>
+  <div><h3>Une méthode forensique outillée</h3><p>Lecture du code source de rclone pour réfuter une hypothèse, datation par le journal NTFS, tests contrôlés à une seule variable, test statistique des séquences, lecture du SQL en clair d'un build de debug.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.6,148.8a6,6,0,0,1-8.4-1.2A53.58,53.58,0,0,0,192,126a6,6,0,0,1,0-12,26,26,0,1,0-25.18-32.5,6,6,0,0,1-11.62-3,38,38,0,1,1,59.91,39.63A65.69,65.69,0,0,1,244.8,140.4,6,6,0,0,1,243.6,148.8ZM189.19,213a6,6,0,0,1-2.19,8.2,5.9,5.9,0,0,1-3,.81,6,6,0,0,1-5.2-3,59,59,0,0,0-101.62,0,6,6,0,1,1-10.38-6A70.1,70.1,0,0,1,103,182.55a46,46,0,1,1,50.1,0A70.1,70.1,0,0,1,189.19,213ZM128,178a34,34,0,1,0-34-34A34,34,0,0,0,128,178ZM70,120a6,6,0,0,0-6-6A26,26,0,1,1,89.18,81.49a6,6,0,1,0,11.62-3,38,38,0,1,0-59.91,39.63A65.69,65.69,0,0,0,11.2,140.4a6,6,0,1,0,9.6,7.2A53.58,53.58,0,0,1,64,126,6,6,0,0,0,70,120Z"/></svg></span>
+  <div><h3>Deux agents en parallèle</h3><p>Claude Cowork a indexé et croisé les données, Claude Code a analysé la base. Les dossiers d'enquête sont écrits pour être rechargés après chaque compactage.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></svg></span>
+  <div><h3>Les hypothèses réfutées sont gardées</h3><p>Un tableau dédié conserve les 11 hypothèses réfutées, et les erreurs de l'IA corrigées par elle-même.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,48V208a14,14,0,0,1-14,14H136a6,6,0,0,1,0-12h72a2,2,0,0,0,2-2V48a2,2,0,0,0-2-2H48a2,2,0,0,0-2,2v96a6,6,0,0,1-12,0V48A14,14,0,0,1,48,34H208A14,14,0,0,1,222,48ZM115.76,155.76,64,207.51,44.24,187.76a6,6,0,0,0-8.48,8.48l24,24a6,6,0,0,0,8.48,0l56-56a6,6,0,0,0-8.48-8.48Z"/></svg></span>
+  <div><h3>Une preuve de complétude après chaque transfert</h3><p>Les deux côtés sont relistés après chaque transfert. Tout fichier manquant marque l'exécution comme incomplète et devient un plan qui ne peut qu'ajouter, jamais supprimer.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm90,102a89.6,89.6,0,0,1-22.29,59.22L68.78,60.29A89.95,89.95,0,0,1,218,128ZM38,128A89.6,89.6,0,0,1,60.29,68.78L187.22,195.71A89.95,89.95,0,0,1,38,128Z"/></svg></span>
+  <div><h3>Des suppressions plafonnées par le plan validé</h3><p>Chaque transfert reçoit comme plafond strict le nombre de suppressions que j'ai validé. Sur le banc de test, trois suppressions locales de plus ont été refusées et les fichiers conservés.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220,200.8,158,97.48V38h10a6,6,0,0,0,0-12H88a6,6,0,0,0,0,12H98V97.48L36,200.8A14,14,0,0,0,48,222H208a14,14,0,0,0,12-21.2ZM109.15,102.23a6,6,0,0,0,.85-3.09V38h36V99.14a6,6,0,0,0,.85,3.09l39.65,66.08c-12.41,3.16-30.86,3-55.79-9.66-16.94-8.58-33-12.8-47.83-12.64ZM209.72,209a2,2,0,0,1-1.74,1H48a2,2,0,0,1-1.71-3l29-48.41c14.89-2.08,31.68,1.55,49.94,10.79C144,178.8,159.67,182,172.42,182A67.89,67.89,0,0,0,192.89,179l16.8,28A2,2,0,0,1,209.72,209Z"/></svg></span>
+  <div><h3>Un banc de test avec le vrai outil</h3><p>Le banc fait tourner le vrai rclone contre un distant local, avec 3 000 fichiers générés et 11 contrôles, pour tester chaque règle sans toucher au cloud.</p></div>
+</li></ul>
+    </section>
+
+    
+    
+    <section class="psec"><h2 class="psec__title">Ce qui a été difficile</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>Une règle qui aurait tout détruit</h3>
+  <dl>
+    <div><dt>Le problème</dt><dd>5 095 photos détruites par le client officiel. Supprimer les fichiers temporaires semblait être la solution.</dd></div>
+    <div><dt>Ce que j'ai fait</dt><dd>Lecture du fonctionnement interne : chaque fichier temporaire était indexé avec l'identifiant cloud de sa cible.</dd></div>
+    <div><dt>Le résultat</dt><dd>La règle aurait détruit 12 801 fichiers, en local et dans le cloud. Elle a été corrigée avant tout geste.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Un succès avec 5 386 fichiers manquants</h3>
+  <dl>
+    <div><dt>Le problème</dt><dd>Une synchronisation annoncée réussie laissait des fichiers de côté, et huit reproductions locales étaient propres.</dd></div>
+    <div><dt>Ce que j'ai fait</dt><dd>La défense a été livrée quand même : une vérification de complétude après chaque transfert.</dd></div>
+    <div><dt>Le résultat</dt><dd>205 000 fichiers vérifiés en 45 secondes, et un contrôle de dérive planifié.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">En chiffres</h2>
+<dl class="figures"><div><dt>hypothèses réfutées et documentées</dt><dd>11</dd></div><div><dt>fichiers sauvés d'une règle erronée</dt><dd>12 801</dd></div><div><dt>commits co-écrits avec Claude</dt><dd>40</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Captures</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pcloud/garde-fou-suppressions.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/pcloud/garde-fou-suppressions.webp" alt="Un transfert arrêté par le plafond de suppressions" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Le garde-fou en action : le transfert s'est arrêté parce qu'il demandait plus de suppressions que le plan validé.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pcloud/detail-envois.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/pcloud/detail-envois.webp" alt="Le détail des fichiers à envoyer" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Le plan en détail, dossier par dossier, avant que quoi que ce soit ne quitte la machine. Les fichiers sont fictifs.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/pcloud/historique-runs.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/pcloud/historique-runs.webp" alt="L'historique des exécutions" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>L'historique des exécutions, échecs compris.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">Compétences IA démontrées</h2><ul class="tags"><li>Forensique assistée par IA</li><li>Prompt de passation</li><li>Multi-agents</li><li>Tests contrôlés</li><li>Preuve de complétude</li><li>Hypothèses réfutées</li></ul></section>
+
+    <nav class="pnav" aria-label="Projets">
+      <a href="/portfolio/fr/projets/applesync/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Projet précédent</small><span>AppleSync</span></a>
+      <a href="/portfolio/fr/projets/photo-merge/" class="pnav__next"><small>Projet suivant<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Fusion de photothèque sans perte</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Site statique écrit avec Claude Code, sans framework ni traceur.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Agrandir l'image">
+  <img alt="">
+  <button type="button" aria-label="Fermer"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=mufcr3cr" defer></script>
+</body>
+</html>

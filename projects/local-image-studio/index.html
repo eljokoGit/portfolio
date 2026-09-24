@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local AI image studio | Bruno Lesgourgues</title>
+<meta name="description" content="Open models on my own GPU server, driven from a chat-style interface I designed: I type an idea, a local LLM turns it into a detailed prompt, the GPU draws it.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/local-image-studio/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/local-image-studio/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/local-image-studio/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/local-image-studio/">
+<meta property="og:title" content="Local AI image studio | Bruno Lesgourgues">
+<meta property="og:description" content="Open models on my own GPU server, driven from a chat-style interface I designed: I type an idea, a local LLM turns it into a detailed prompt, the GPU draws it.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/imagechat/chat-conversation.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=mufcr3cr">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/projects/" aria-current="page">Projects</a></li><li><a href="/portfolio/#method">Method</a></li><li><a href="/portfolio/#tools">Tools</a></li><li><a href="/portfolio/#contact">About</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Language"><span class="lang is-current" aria-current="true">EN</span><a class="lang" href="/portfolio/fr/projets/local-image-studio/" hreflang="fr" lang="fr">FR</a><a class="lang" href="/portfolio/es/proyectos/local-image-studio/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>All projects</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42ZM40,54H216a2,2,0,0,1,2,2V163.57L188.53,134.1a14,14,0,0,0-19.8,0l-21.42,21.42L101.9,110.1a14,14,0,0,0-19.8,0L38,154.2V56A2,2,0,0,1,40,54ZM38,200V171.17l52.58-52.58a2,2,0,0,1,2.84,0L176.83,202H40A2,2,0,0,1,38,200Zm178,2H193.8l-38-38,21.41-21.42a2,2,0,0,1,2.83,0l38,38V200A2,2,0,0,1,216,202ZM146,100a10,10,0,1,1,10,10A10,10,0,0,1,146,100Z"/></svg></span>
+      <h1 class="intro__title">Local AI image studio</h1>
+      <p class="intro__lead">Open models on my own GPU server, driven from a chat-style interface I designed: I type an idea, a local LLM turns it into a detailed prompt, the GPU draws it.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Category</dt><dd>Local AI</dd></div>
+          <div><dt>Period</dt><dd>September 2026</dd></div>
+          <div><dt>Status</dt><dd>Deployed on my home server</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Python, FastAPI, Alpine.js, SQLite, Server-sent events, ComfyUI, WorkflowUI, Ollama, Docker, nginx</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/imagechat/chat-conversation.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/imagechat/chat-conversation.webp" alt="The chat interface: a typed idea, its rewritten prompt and the generated image" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">The project</h2>
+      <div class="prose prose--lead"><p>I started running AI locally: ComfyUI for image generation graphs, WorkflowUI to publish those graphs as simple apps, and a local LLM for text. To use them every day, I designed my own interface, a conversation where each message becomes an image.</p><p>It is a small FastAPI service with an Alpine.js page. The browser only talks to the service. The service calls a fixed list of WorkflowUI routes and reads ComfyUI without ever writing to it.</p><p>The screenshots come from a copy with demo conversations. The rewritten prompts they show are illustrative: that display is built and tested, and goes live with the next workflow version.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">What I did with AI</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm0-160a70,70,0,1,0,70,70A70.08,70.08,0,0,0,128,58Zm0,128a58,58,0,1,1,58-58A58.07,58.07,0,0,1,128,186Z"/></svg></span>
+  <div><h3>Record the real server before coding</h3><p>Claude first explored WorkflowUI read-only, its API description and its front-end code, to find the exact request format. It then recorded a full real run, plus cancel, error and unknown-run cases. Only then did it write code.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"/></svg></span>
+  <div><h3>Hidden behaviours, measured</h3><p>Without its field bindings, WorkflowUI answers 200 but runs the default values. A graph can report success with no image. A failed rewrite silently returns the typed prompt. Each trap was measured, written down and turned into a rule.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M246,124a54.13,54.13,0,0,0-32-49.33V72a46,46,0,0,0-86-22.67A46,46,0,0,0,42,72v2.67a54,54,0,0,0,0,98.63V176a46,46,0,0,0,86,22.67A46,46,0,0,0,214,176v-2.7A54.07,54.07,0,0,0,246,124ZM88,210a34,34,0,0,1-34-32.94A53.67,53.67,0,0,0,64,178h8a6,6,0,0,0,0-12H64A42,42,0,0,1,50,84.39a6,6,0,0,0,4-5.66V72a34,34,0,0,1,68,0v73.05A45.89,45.89,0,0,0,88,130a6,6,0,0,0,0,12,34,34,0,0,1,0,68Zm104-44h-8a6,6,0,0,0,0,12h8a53.67,53.67,0,0,0,10-.94A34,34,0,1,1,168,142a6,6,0,0,0,0-12,45.89,45.89,0,0,0-34,15.05V72a34,34,0,0,1,68,0v6.73a6,6,0,0,0,4,5.66A42,42,0,0,1,192,166Zm14-54a6,6,0,0,1-6,6h-4a34,34,0,0,1-34-34V80a6,6,0,0,1,12,0v4a22,22,0,0,0,22,22h4A6,6,0,0,1,206,112ZM60,118H56a6,6,0,0,1,0-12h4A22,22,0,0,0,82,84V80a6,6,0,0,1,12,0v4A34,34,0,0,1,60,118Z"/></svg></span>
+  <div><h3>A local LLM in the pipeline</h3><p>Each idea is rewritten by a local LLM before diffusion. A copy of the workflow exposes the rewritten text, and a 4-line patch to the rewrite node makes Retry really run the rewrite again.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,42H48A14,14,0,0,0,34,56v56c0,51.94,25.12,83.4,46.2,100.64,22.73,18.6,45.27,24.89,46.22,25.15a6,6,0,0,0,3.16,0c.95-.26,23.49-6.55,46.22-25.15C196.88,195.4,222,163.94,222,112V56A14,14,0,0,0,208,42Zm2,70c0,37.76-13.94,68.39-41.44,91.06A131.17,131.17,0,0,1,128,225.72a130.94,130.94,0,0,1-40.56-22.66C59.94,180.39,46,149.76,46,112V56a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></svg></span>
+  <div><h3>An allow-list, not a proxy</h3><p>WorkflowUI's admin routes are open on the local network, so the service must never relay arbitrary calls. It knows 12 WorkflowUI calls and 2 read-only ComfyUI calls, and caps every value: one image per run, sizes up to 2048 pixels.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M236.24,87.76l-60-60a6,6,0,0,0-8.48,0L38.53,157A42.77,42.77,0,1,0,99,217.47L211.24,105.24l22.66-7.55a6,6,0,0,0,2.34-9.93ZM90.53,209A30.77,30.77,0,1,1,47,165.47l29.13-29.12c8.84-3.14,22.84-4.56,41.08,5,12.28,6.41,23.13,8.66,32.27,8.71ZM206.1,94.31a6,6,0,0,0-2.34,1.45l-39.9,39.89c-8.84,3.14-22.84,4.56-41.08-5C110.5,124.27,99.65,122,90.51,122L172,40.49l48.89,48.89Z"/></svg></span>
+  <div><h3>Tests without a GPU</h3><p>58 tests run in under a second. They replay 24 responses recorded on the real server, errors included, with no hand-written fake.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,42a94,94,0,1,0,94,94A94.11,94.11,0,0,0,128,42Zm0,176a82,82,0,1,1,82-82A82.1,82.1,0,0,1,128,218ZM172.24,91.76a6,6,0,0,1,0,8.48l-40,40a6,6,0,1,1-8.48-8.48l40-40A6,6,0,0,1,172.24,91.76ZM98,16a6,6,0,0,1,6-6h48a6,6,0,0,1,0,12H104A6,6,0,0,1,98,16Z"/></svg></span>
+  <div><h3>Honest progress, no ghost messages</h3><p>Progress is streamed live and estimated from the last 100 runs; it stops at 95 % until the real end. Each message is saved before the run starts and removed if the server refuses it.</p></div>
+</li></ul>
+    </section>
+
+    <section class="psec"><h2 class="psec__title">From an idea to an image</h2><div class="flow"><ol class="flow__steps" style="--n:5"><li class="flow__step flow__step--human" data-reveal style="--i:0">
+  <strong>An idea</strong>
+  <span>Typed in the conversation</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:1">
+  <strong>Checked request</strong>
+  <span>Allow-list, capped values</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
+  <strong>Local LLM</strong>
+  <span>Rewrites the prompt, about 23 s</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:3">
+  <strong>Diffusion on the GPU</strong>
+  <span>8 steps, about 35 s</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:4">
+  <strong>Result check</strong>
+  <span>Done with no image is an error</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Handled by AI</span><span><i class="flow__dot flow__dot--code"></i>Deterministic code</span><span><i class="flow__dot flow__dot--human"></i>Human decision</span></p></div></section>
+    
+    <section class="psec"><h2 class="psec__title">What was hard</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>A 200 that ran the wrong thing</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>On the first test run, WorkflowUI answered 200 but generated its default values: the request lacked the field bindings, and nothing said so.</dd></div>
+    <div><dt>What I did</dt><dd>Claude read the front-end code to find the exact body, then every call was recorded on the real server and replayed in the tests.</dd></div>
+    <div><dt>The result</dt><dd>The service always sends the bindings, and a test breaks if they disappear.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>A success with no image</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>ComfyUI can report a run as successful while the image branch was rejected: one valid output node is enough for it.</dd></div>
+    <div><dt>What I did</dt><dd>A rule in the service: a finished run with no image is an error, shown in the conversation.</dd></div>
+    <div><dt>The result</dt><dd>An invalid setting now shows up as a clear error in 1.5 seconds, instead of an empty success.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">By the numbers</h2>
+<dl class="figures"><div><dt>tests, run without a GPU</dt><dd>58</dd></div><div><dt>real server responses replayed</dt><dd>24</dd></div><div><dt>from the reviewed spec to a working page</dt><dd>2 h 40</dd></div><div><dt>per image, rewrite included</dt><dd>65 s</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/imagechat/chat-progress.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/imagechat/chat-progress.webp" alt="A run in progress and one in the queue" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Live progress: an estimate from the last 100 runs, streamed over server-sent events.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/imagechat/chat-settings.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/imagechat/chat-settings.webp" alt="The settings panel" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Settings are capped and cleaned by the server before any call.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/imagechat/chat-conversation-dark.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/imagechat/chat-conversation-dark.webp" alt="The conversation in dark mode" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The same conversation in dark mode.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/imagechat/chat-mobile.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/imagechat/chat-mobile.webp" alt="The mobile view" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>On a phone.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Local AI (ComfyUI, WorkflowUI, Ollama)</li><li>Prompt rewriting with a local LLM</li><li>API discovery and recording</li><li>Replay tests</li><li>API allow-list</li><li>Live progress over SSE</li></ul></section>
+
+    <nav class="pnav" aria-label="Projects">
+      <a href="/portfolio/projects/verifactu/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>VERI*FACTU invoicing</span></a>
+      <a href="/portfolio/projects/applesync/" class="pnav__next"><small>Next project<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>AppleSync</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Static site written with Claude Code, no framework, no tracker.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Enlarge image">
+  <img alt="">
+  <button type="button" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=mufcr3cr" defer></script>
+</body>
+</html>

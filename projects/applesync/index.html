@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AppleSync | Bruno Lesgourgues</title>
+<meta name="description" content="A verifiable backup of iPhone photos to Windows, over Apple's protocol, with a device simulator that injects failures.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/applesync/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/applesync/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/applesync/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/applesync/">
+<meta property="og:title" content="AppleSync | Bruno Lesgourgues">
+<meta property="og:description" content="A verifiable backup of iPhone photos to Windows, over Apple's protocol, with a device simulator that injects failures.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/applesync/02-copy.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=mufcr3cr">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/projects/" aria-current="page">Projects</a></li><li><a href="/portfolio/#method">Method</a></li><li><a href="/portfolio/#tools">Tools</a></li><li><a href="/portfolio/#contact">About</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Language"><span class="lang is-current" aria-current="true">EN</span><a class="lang" href="/portfolio/fr/projets/applesync/" hreflang="fr" lang="fr">FR</a><a class="lang" href="/portfolio/es/proyectos/applesync/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>All projects</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M176,18H80A22,22,0,0,0,58,40V216a22,22,0,0,0,22,22h96a22,22,0,0,0,22-22V40A22,22,0,0,0,176,18ZM70,62H186V194H70ZM80,30h96a10,10,0,0,1,10,10V50H70V40A10,10,0,0,1,80,30Zm96,196H80a10,10,0,0,1-10-10V206H186v10A10,10,0,0,1,176,226Z"/></svg></span>
+      <h1 class="intro__title">AppleSync</h1>
+      <p class="intro__lead">A verifiable backup of iPhone photos to Windows, over Apple's protocol, with a device simulator that injects failures.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Category</dt><dd>Data</dd></div>
+          <div><dt>Period</dt><dd>August 2026</dd></div>
+          <div><dt>Status</dt><dd>Version 1.2.1 released as open source</dd></div>
+        </dl>
+        <a class="pill pill--link phead__cta" href="https://github.com/eljokoGit/applesync" rel="noopener">View the code on GitHub<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,104a6,6,0,0,1-12,0V54.49l-69.75,69.75a6,6,0,0,1-8.48-8.48L201.51,46H152a6,6,0,0,1,0-12h64a6,6,0,0,1,6,6Zm-38,26a6,6,0,0,0-6,6v72a2,2,0,0,1-2,2H48a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2h72a6,6,0,0,0,0-12H48A14,14,0,0,0,34,80V208a14,14,0,0,0,14,14H176a14,14,0,0,0,14-14V136A6,6,0,0,0,184,130Z"/></svg></a>
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Python, PySide6, pymobiledevice3, SQLite, pytest, GitHub Actions</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/applesync/02-copy.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/applesync/02-copy.webp" alt="AppleSync during a copy" width="1000" height="880" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">The project</h2>
+      <div class="prose prose--lead"><p>The tool copies an iPhone's whole photo library to a PC, bypassing Windows Explorer, which silently loses files. It inventories twice, resumes a copy to the byte and rereads every file to prove the backup is complete.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">What I did with AI</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></svg></span>
+  <div><h3>Reasoned decisions</h3><p>16 decisions in a &quot;chosen, alternatives rejected, why&quot; format, and a &quot;decisions I am least sure about&quot; section with six hypotheses to confirm on the real device.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M146,92a10,10,0,1,1,10,10A10,10,0,0,1,146,92ZM100,82a10,10,0,1,0,10,10A10,10,0,0,0,100,82Zm146,46a6,6,0,0,1-6,6H214v10a85.88,85.88,0,0,1-3.45,24.08L234.4,178.5a6,6,0,0,1-4.8,11l-23.23-10.15a86,86,0,0,1-156.74,0L26.4,189.5a6,6,0,1,1-4.8-11l23.85-10.42A85.88,85.88,0,0,1,42,144V134H16a6,6,0,0,1,0-12H42V112a85.88,85.88,0,0,1,3.45-24.08L21.6,77.5a6,6,0,0,1,4.8-11L49.63,76.65a86,86,0,0,1,156.74,0L229.6,66.5a6,6,0,1,1,4.8,11L210.55,87.92A85.88,85.88,0,0,1,214,112v10h26A6,6,0,0,1,246,128ZM54,122H202V112a74,74,0,0,0-148,0Zm68,95.74V134H54v10A74.09,74.09,0,0,0,122,217.74ZM202,134H134v83.74A74.09,74.09,0,0,0,202,144Z"/></svg></span>
+  <div><h3>A simulator with fault injection</h3><p>Silent truncation, disconnection, a read failing at byte N, a locked device: 40,000 files and 109 GB simulated without storing anything. Tests run without an iPhone.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M67.84,92.61,25.37,128l42.47,35.39a6,6,0,1,1-7.68,9.22l-48-40a6,6,0,0,1,0-9.22l48-40a6,6,0,0,1,7.68,9.22Zm176,30.78-48-40a6,6,0,1,0-7.68,9.22L230.63,128l-42.47,35.39a6,6,0,1,0,7.68,9.22l48-40a6,6,0,0,0,0-9.22Zm-81.79-89A6,6,0,0,0,154.36,38l-64,176A6,6,0,0,0,94,221.64a6.15,6.15,0,0,0,2,.36,6,6,0,0,0,5.64-3.95l64-176A6,6,0,0,0,162.05,34.36Z"/></svg></span>
+  <div><h3>Protocol-level work</h3><p>Seeking within a file is rebuilt by hand from the reference library, and verified by reading the position back.</p></div>
+</li></ul>
+    </section>
+
+    
+    
+    <section class="psec"><h2 class="psec__title">What was hard</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>The false baseline</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>Three reads of the same folder through Explorer gave 164, then 124, then 185 folders.</dd></div>
+    <div><dt>What I did</dt><dd>Comparison with Apple's protocol and a cross-check against the phone's settings.</dd></div>
+    <div><dt>The result</dt><dd>39,978 real files, two matching passes in 30 seconds.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">By the numbers</h2>
+<dl class="figures"><div><dt>tests, without hardware</dt><dd>110</dd></div><div><dt>CI combinations: 2 OSes, 2 Python versions</dt><dd>4</dd></div><div><dt>from private repo to public release</dt><dd>48 h</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/applesync/01-plan.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/applesync/01-plan.webp" alt="The plan before copying" width="1000" height="880" loading="lazy" decoding="async" sizes="100vw"></button></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/applesync/03-report-dark.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/applesync/03-report-dark.webp" alt="The final report" width="1000" height="880" loading="lazy" decoding="async" sizes="100vw"></button></figure></div></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Documented decisions</li><li>Explicit uncertainty</li><li>Protocol reverse engineering</li><li>Fault-injection simulator</li><li>CI and open source release</li></ul></section>
+
+    <nav class="pnav" aria-label="Projects">
+      <a href="/portfolio/projects/local-image-studio/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>Local AI image studio</span></a>
+      <a href="/portfolio/projects/cloud-backup/" class="pnav__next"><small>Next project<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Proven cloud backup</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Static site written with Claude Code, no framework, no tracker.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Enlarge image">
+  <img alt="">
+  <button type="button" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=mufcr3cr" defer></script>
+</body>
+</html>
