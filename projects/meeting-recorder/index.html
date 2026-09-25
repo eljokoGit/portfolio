@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teams meeting recorder | Bruno Lesgourgues</title>
+<meta name="description" content="A Chrome extension that turns a Teams meeting into one structured PDF: live captions, my notes and screenshots, with no audio. Built with Claude Code from a written spec, one milestone at a time.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/meeting-recorder/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/meeting-recorder/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/meeting-recorder/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/meeting-recorder/">
+<meta property="og:title" content="Teams meeting recorder | Bruno Lesgourgues">
+<meta property="og:description" content="A Chrome extension that turns a Teams meeting into one structured PDF: live captions, my notes and screenshots, with no audio. Built with Claude Code from a written spec, one milestone at a time.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/meeting-recorder/cover.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=3cec1cb124">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/projects/" aria-current="page">Projects</a></li><li><a href="/portfolio/#method">Method</a></li><li><a href="/portfolio/#tools">Tools</a></li><li><a href="/portfolio/#contact">About</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Language"><span class="lang is-current" aria-current="true">EN</span><a class="lang" href="/portfolio/fr/projets/meeting-recorder/" hreflang="fr" lang="fr">FR</a><a class="lang" href="/portfolio/es/proyectos/meeting-recorder/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>All projects</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32A14,14,0,0,0,18,64V192a14,14,0,0,0,14,14H224a14,14,0,0,0,14-14V64A14,14,0,0,0,224,50Zm2,142a2,2,0,0,1-2,2H32a2,2,0,0,1-2-2V64a2,2,0,0,1,2-2H224a2,2,0,0,1,2,2ZM50,136a6,6,0,0,1,6-6H72a6,6,0,0,1,0,12H56A6,6,0,0,1,50,136Zm156,0a6,6,0,0,1-6,6H104a6,6,0,0,1,0-12h96A6,6,0,0,1,206,136Zm-48,32a6,6,0,0,1-6,6H56a6,6,0,0,1,0-12h96A6,6,0,0,1,158,168Zm48,0a6,6,0,0,1-6,6H184a6,6,0,0,1,0-12h16A6,6,0,0,1,206,168Z"/></svg></span>
+      <h1 class="intro__title">Teams meeting recorder</h1>
+      <p class="intro__lead">A Chrome extension that turns a Teams meeting into one structured PDF: live captions, my notes and screenshots, with no audio. Built with Claude Code from a written spec, one milestone at a time.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Category</dt><dd>Apps</dd></div>
+          <div><dt>Period</dt><dd>August and September 2026</dd></div>
+          <div><dt>Status</dt><dd>Version 0.14.0, used in real meetings, interface overhaul planned</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Chrome extension (Manifest V3), JavaScript, MutationObserver, Shadow DOM, jsPDF, Claude Code</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/cover.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/meeting-recorder/cover.webp" alt="The extension's floating badge in a fictitious meeting: notes, screenshot button and line counter" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">The project</h2>
+      <div class="prose prose--lead"><p>In a large industrial group, I wanted a trace of each meeting that agents could read afterwards. The extension reads Teams' live captions in the browser, adds my notes and screenshots, and produces one PDF when the meeting ends. It records no audio and sends nothing to a third party.</p><p>I wrote the spec first: 13 sections, 7 milestones, acceptance criteria and a list of what not to do. Claude Code built it one milestone at a time and stopped after each with a test plan. I tested in real meetings, and nothing moved on without my validation.</p><p>The screenshots show the real extension on a fictitious meeting played by a local page: the badge, the side panel, the diagnostic and the PDF it produced.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">What I did with AI</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,83.76l-56-56A6,6,0,0,0,152,26H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V88A6,6,0,0,0,212.24,83.76ZM158,46.48,193.52,82H158ZM200,218H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2h90V88a6,6,0,0,0,6,6h50V216A2,2,0,0,1,200,218Zm-34-82a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,136Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,168Z"/></svg></span>
+  <div><h3>A spec, then milestones with a stop</h3><p>My first instruction: read the whole spec, stop after each milestone, and ask instead of working around a problem. Before writing code, Claude flagged two flaws in my spec: a storage choice that made crash recovery impossible, and a 20-second alarm that Chrome does not allow.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.6,148.8a6,6,0,0,1-8.4-1.2A53.58,53.58,0,0,0,192,126a6,6,0,0,1,0-12,26,26,0,1,0-25.18-32.5,6,6,0,0,1-11.62-3,38,38,0,1,1,59.91,39.63A65.69,65.69,0,0,1,244.8,140.4,6,6,0,0,1,243.6,148.8ZM189.19,213a6,6,0,0,1-2.19,8.2,5.9,5.9,0,0,1-3,.81,6,6,0,0,1-5.2-3,59,59,0,0,0-101.62,0,6,6,0,1,1-10.38-6A70.1,70.1,0,0,1,103,182.55a46,46,0,1,1,50.1,0A70.1,70.1,0,0,1,189.19,213ZM128,178a34,34,0,1,0-34-34A34,34,0,0,0,128,178ZM70,120a6,6,0,0,0-6-6A26,26,0,1,1,89.18,81.49a6,6,0,1,0,11.62-3,38,38,0,1,0-59.91,39.63A65.69,65.69,0,0,0,11.2,140.4a6,6,0,1,0,9.6,7.2A53.58,53.58,0,0,1,64,126,6,6,0,0,0,70,120Z"/></svg></span>
+  <div><h3>50 agents looking for the flaw</h3><p>After each milestone, a workflow of review agents read the code against the spec. Each finding had to come with a failure scenario. On the first milestones, other agents tried to refute them: 3 out of 3 refuted on the skeleton, 8 out of 16 kept on caption capture.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"/></svg></span>
+  <div><h3>Instruments to bring reality back</h3><p>Claude cannot attend a meeting. So the extension carries its own instruments: a selector diagnostic, an event log, and a DOM capture that leaves out private messages. I paste the output, Claude fixes against the real page. That is how an unplanned confirmation dialog showed up in the caption language switch.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M235.07,189.09,147.61,37.22h0a22.75,22.75,0,0,0-39.22,0L20.93,189.09a21.53,21.53,0,0,0,0,21.72A22.35,22.35,0,0,0,40.55,222h174.9a22.35,22.35,0,0,0,19.6-11.19A21.53,21.53,0,0,0,235.07,189.09ZM224.66,204.8a10.46,10.46,0,0,1-9.21,5.2H40.55a10.46,10.46,0,0,1-9.21-5.2,9.51,9.51,0,0,1,0-9.72L118.79,43.21a10.75,10.75,0,0,1,18.42,0l87.46,151.87A9.51,9.51,0,0,1,224.66,204.8ZM122,144V104a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,180Z"/></svg></span>
+  <div><h3>A wrong assumption, caught</h3><p>Claude removed a permission on a wrong assumption and broke screenshots. After my test, it admitted the error, then weighed three options before coding. The one I approved takes the shared content straight from the page, with no new permission. I had refused access to all sites: the only site permission is still the meeting domain.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,152a6,6,0,0,1-6,6H190v20h18a6,6,0,0,1,0,12H190v18a6,6,0,0,1-12,0V152a6,6,0,0,1,6-6h32A6,6,0,0,1,222,152ZM90,172a26,26,0,0,1-26,26H54v10a6,6,0,0,1-12,0V152a6,6,0,0,1,6-6H64A26,26,0,0,1,90,172Zm-12,0a14,14,0,0,0-14-14H54v28H64A14,14,0,0,0,78,172Zm84,8a34,34,0,0,1-34,34H112a6,6,0,0,1-6-6V152a6,6,0,0,1,6-6h16A34,34,0,0,1,162,180Zm-12,0a22,22,0,0,0-22-22H118v44h10A22,22,0,0,0,150,180ZM42,112V40A14,14,0,0,1,56,26h96a6,6,0,0,1,4.25,1.76l56,56A6,6,0,0,1,214,88v24a6,6,0,0,1-12,0V94H152a6,6,0,0,1-6-6V38H56a2,2,0,0,0-2,2v72a6,6,0,0,1-12,0ZM158,82h35.52L158,46.48Z"/></svg></span>
+  <div><h3>A PDF written for agents</h3><p>Notes and transcript live in separate sections, each opened by a sentence that says what it contains. Markers such as [NOTE 2] and [CAPTURE 1] survive text extraction. My notes come first because they sometimes carry instructions for the agents that read the file. I set aside the planned AI summary: interpretation happens downstream.</p></div>
+</li></ul>
+    </section>
+
+    <section class="psec"><h2 class="psec__title">One milestone, start to finish</h2><div class="flow"><ol class="flow__steps" style="--n:6"><li class="flow__step flow__step--human" data-reveal style="--i:0">
+  <strong>Spec</strong>
+  <span>Milestone, criteria, what not to do</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:1">
+  <strong>Claude codes</strong>
+  <span>Then stops with a test plan</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
+  <strong>Review agents</strong>
+  <span>Each finding with its failure scenario</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:3">
+  <strong>Final check</strong>
+  <span>A second round on the fixes</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:4">
+  <strong>Real meeting</strong>
+  <span>I test and bring back the real page</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:5">
+  <strong>Validation</strong>
+  <span>Or a dated amendment to the spec</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Handled by AI</span><span><i class="flow__dot flow__dot--human"></i>Human decision</span></p></div></section>
+    
+    <section class="psec"><h2 class="psec__title">What was hard</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>Recycled lines</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>In a real meeting, the captions lived in a virtualised list that detaches and reuses lines as it scrolls. The spec treated a detached line as final: duplicates and losses were certain.</dd></div>
+    <div><dt>What I did</dt><dd>I asked for the strategy before any code and refused one of its signals, because a sentence can appear in one piece without being a repeat. Claude replaced node tracking with a register indexed on content, and added decision counters to the diagnostic.</dd></div>
+    <div><dt>The result</dt><dd>On a 3-hour real meeting: 1,959 lines, 2.9% residual duplicates, no gap. Merging the remaining duplicates stays off by default: the PDF keeps everything captured.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>A title that never existed</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>A PDF came out under the name of a chat instead of the meeting. The two title selectors written at milestone 1 had never matched, and a fallback hid it.</dd></div>
+    <div><dt>What I did</dt><dd>The diagnostic now lists every candidate selector that has never matched since installation. A DOM capture in a real meeting then proved that Teams does not expose the meeting subject in the page at all.</dd></div>
+    <div><dt>The result</dt><dd>The tab title, cut to its last segment, became the only source. The six dead candidates left the code, kept as comments with the date and the reason.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:0">
+  <h3>No invented timestamps</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>Against a commercial tool on the same 36-minute meeting, the extension captured more lines, 428 against about 300. But it showed 3 minutes without a line, then about 50 lines stamped with the same second.</dd></div>
+    <div><dt>What I did</dt><dd>Claude showed that the gap and the block were mostly the same speech, displayed late by Teams. Rule: no interpolation. The outage is logged, the badge warns during the meeting, and the PDF frames the block with the only time range that is certain.</dd></div>
+    <div><dt>The result</dt><dd>Tested on a bench that simulates the caption list. Validation in a real meeting is still pending.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">By the numbers</h2>
+<dl class="figures"><div><dt>caption lines on a 3-hour real meeting, 2.9% duplicates</dt><dd>1,959</dd></div><div><dt>review agents across 18 workflows</dt><dd>50</dd></div><div><dt>defects reported by the reviews, each with a failure scenario</dt><dd>121</dd></div><div><dt>versions in five weeks, from 0.1.0 to 0.14.0</dt><dd>31</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/pdf-transcript.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/meeting-recorder/pdf-transcript.webp" alt="A transcript page of the PDF produced by the extension" width="1191" height="1684" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The PDF produced at the end of the meeting: the screenshot sits at its place in the transcript with its caption, then a catch-up block ([RATTRAPAGE]) whose times are marked as approximate. Fictitious meeting.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/side-panel.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/meeting-recorder/side-panel.webp" alt="The side panel during a session" width="800" height="1615" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The side panel: line counter, notes, the captured slide with its caption, and the last 8 captured lines to check the capture live. The interface is in French. Fictitious meeting.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/diagnostic.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/meeting-recorder/diagnostic.webp" alt="The selector diagnostic" width="1359" height="1549" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The diagnostic: deduplication decisions (22 emitted, 6 silent recycles), the title rule, and every selector that has never matched since installation.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Spec-first development</li><li>Milestones with human validation</li><li>Adversarial multi-agent review</li><li>Field testing and built-in diagnostics</li><li>Minimal permissions</li><li>Documents designed for agents</li></ul></section>
+
+    <nav class="pnav" aria-label="Projects">
+      <a href="/portfolio/projects/agent-platform/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>24/7 agent platform</span></a>
+      <a href="/portfolio/projects/admin-assistant/" class="pnav__next"><small>Next project<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Freelancer admin assistant</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Static site written with Claude Code, no framework, no tracker.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Enlarge image">
+  <img alt="">
+  <button type="button" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=3cec1cb124" defer></script>
+</body>
+</html>

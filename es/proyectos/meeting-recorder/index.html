@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grabador de reuniones de Teams | Bruno Lesgourgues</title>
+<meta name="description" content="Una extensión de Chrome que convierte una reunión de Teams en un único PDF estructurado: subtítulos en directo, mis notas y capturas de pantalla, sin grabar audio. Construida con Claude Code a partir de una especificación escrita, hito a hito.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/meeting-recorder/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/meeting-recorder/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/meeting-recorder/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/meeting-recorder/">
+<meta property="og:title" content="Grabador de reuniones de Teams | Bruno Lesgourgues">
+<meta property="og:description" content="Una extensión de Chrome que convierte una reunión de Teams en un único PDF estructurado: subtítulos en directo, mis notas y capturas de pantalla, sin grabar audio. Construida con Claude Code a partir de una especificación escrita, hito a hito.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/meeting-recorder/cover.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=3cec1cb124">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Ir al contenido</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/es/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/es/proyectos/" aria-current="page">Proyectos</a></li><li><a href="/portfolio/es/#method">Método</a></li><li><a href="/portfolio/es/#tools">Herramientas</a></li><li><a href="/portfolio/es/#contact">Sobre mí</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Idioma"><a class="lang" href="/portfolio/projects/meeting-recorder/" hreflang="en" lang="en">EN</a><a class="lang" href="/portfolio/fr/projets/meeting-recorder/" hreflang="fr" lang="fr">FR</a><span class="lang is-current" aria-current="true">ES</span></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/es/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Todos los proyectos</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32A14,14,0,0,0,18,64V192a14,14,0,0,0,14,14H224a14,14,0,0,0,14-14V64A14,14,0,0,0,224,50Zm2,142a2,2,0,0,1-2,2H32a2,2,0,0,1-2-2V64a2,2,0,0,1,2-2H224a2,2,0,0,1,2,2ZM50,136a6,6,0,0,1,6-6H72a6,6,0,0,1,0,12H56A6,6,0,0,1,50,136Zm156,0a6,6,0,0,1-6,6H104a6,6,0,0,1,0-12h96A6,6,0,0,1,206,136Zm-48,32a6,6,0,0,1-6,6H56a6,6,0,0,1,0-12h96A6,6,0,0,1,158,168Zm48,0a6,6,0,0,1-6,6H184a6,6,0,0,1,0-12h16A6,6,0,0,1,206,168Z"/></svg></span>
+      <h1 class="intro__title">Grabador de reuniones de Teams</h1>
+      <p class="intro__lead">Una extensión de Chrome que convierte una reunión de Teams en un único PDF estructurado: subtítulos en directo, mis notas y capturas de pantalla, sin grabar audio. Construida con Claude Code a partir de una especificación escrita, hito a hito.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Categoría</dt><dd>Aplicaciones</dd></div>
+          <div><dt>Periodo</dt><dd>Agosto y septiembre de 2026</dd></div>
+          <div><dt>Estado</dt><dd>Versión 0.14.0, usada en reuniones reales, rediseño de la interfaz previsto</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Tecnologías</span>Chrome extension (Manifest V3), JavaScript, MutationObserver, Shadow DOM, jsPDF, Claude Code</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/cover.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/meeting-recorder/cover.webp" alt="La pastilla de la extensión en una reunión ficticia: notas, botón de captura y contador de líneas" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">El proyecto</h2>
+      <div class="prose prose--lead"><p>En un gran grupo industrial, quería una huella de cada reunión que unos agentes pudieran leer después. La extensión lee los subtítulos en directo de Teams en el navegador, añade mis notas y capturas de pantalla, y genera un PDF al terminar la reunión. No graba audio y no envía nada a terceros.</p><p>Primero escribí la especificación: 13 secciones, 7 hitos, criterios de aceptación y una lista de lo que no hay que hacer. Claude Code la construyó hito a hito y se detuvo después de cada uno con un plan de pruebas. Probé en reuniones reales, y nada avanzaba sin mi validación.</p><p>Las capturas muestran la extensión real en una reunión ficticia reproducida por una página local: la pastilla, el panel lateral, el diagnóstico y el PDF que generó.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">Lo que hice con IA</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,83.76l-56-56A6,6,0,0,0,152,26H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V88A6,6,0,0,0,212.24,83.76ZM158,46.48,193.52,82H158ZM200,218H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2h90V88a6,6,0,0,0,6,6h50V216A2,2,0,0,1,200,218Zm-34-82a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,136Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,168Z"/></svg></span>
+  <div><h3>Una especificación, luego hitos con parada</h3><p>Mi primera instrucción: leer toda la especificación, detenerse después de cada hito y preguntar en lugar de sortear un problema. Antes de escribir código, Claude señaló dos fallos en mi especificación: una elección de almacenamiento que hacía imposible la recuperación tras un fallo, y una alarma de 20 segundos que Chrome no permite.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M243.6,148.8a6,6,0,0,1-8.4-1.2A53.58,53.58,0,0,0,192,126a6,6,0,0,1,0-12,26,26,0,1,0-25.18-32.5,6,6,0,0,1-11.62-3,38,38,0,1,1,59.91,39.63A65.69,65.69,0,0,1,244.8,140.4,6,6,0,0,1,243.6,148.8ZM189.19,213a6,6,0,0,1-2.19,8.2,5.9,5.9,0,0,1-3,.81,6,6,0,0,1-5.2-3,59,59,0,0,0-101.62,0,6,6,0,1,1-10.38-6A70.1,70.1,0,0,1,103,182.55a46,46,0,1,1,50.1,0A70.1,70.1,0,0,1,189.19,213ZM128,178a34,34,0,1,0-34-34A34,34,0,0,0,128,178ZM70,120a6,6,0,0,0-6-6A26,26,0,1,1,89.18,81.49a6,6,0,1,0,11.62-3,38,38,0,1,0-59.91,39.63A65.69,65.69,0,0,0,11.2,140.4a6,6,0,1,0,9.6,7.2A53.58,53.58,0,0,1,64,126,6,6,0,0,0,70,120Z"/></svg></span>
+  <div><h3>50 agentes que buscan el fallo</h3><p>Después de cada hito, un workflow de agentes revisores leía el código frente a la especificación. Cada hallazgo debía venir con un escenario de fallo. En los primeros hitos, otros agentes intentaban refutarlos: 3 de 3 refutados en el esqueleto, 8 de 16 mantenidos en la captura de subtítulos.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"/></svg></span>
+  <div><h3>Instrumentos para traer la realidad</h3><p>Claude no puede asistir a una reunión. Por eso la extensión lleva sus propios instrumentos: un diagnóstico de selectores, un registro de eventos y una captura del DOM que excluye los mensajes privados. Pego el resultado y Claude corrige sobre la página real. Así apareció un diálogo de confirmación que nadie había previsto en el cambio de idioma de los subtítulos.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M235.07,189.09,147.61,37.22h0a22.75,22.75,0,0,0-39.22,0L20.93,189.09a21.53,21.53,0,0,0,0,21.72A22.35,22.35,0,0,0,40.55,222h174.9a22.35,22.35,0,0,0,19.6-11.19A21.53,21.53,0,0,0,235.07,189.09ZM224.66,204.8a10.46,10.46,0,0,1-9.21,5.2H40.55a10.46,10.46,0,0,1-9.21-5.2,9.51,9.51,0,0,1,0-9.72L118.79,43.21a10.75,10.75,0,0,1,18.42,0l87.46,151.87A9.51,9.51,0,0,1,224.66,204.8ZM122,144V104a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,180Z"/></svg></span>
+  <div><h3>Una suposición errónea, detectada</h3><p>Claude retiró un permiso partiendo de una suposición errónea y rompió las capturas de pantalla. Tras mi prueba, reconoció el error y sopesó tres opciones antes de programar. La que validé toma el contenido compartido directamente de la página, sin ningún permiso nuevo. Yo había rechazado el acceso a todos los sitios: el único permiso de sitio sigue siendo el dominio de la reunión.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,152a6,6,0,0,1-6,6H190v20h18a6,6,0,0,1,0,12H190v18a6,6,0,0,1-12,0V152a6,6,0,0,1,6-6h32A6,6,0,0,1,222,152ZM90,172a26,26,0,0,1-26,26H54v10a6,6,0,0,1-12,0V152a6,6,0,0,1,6-6H64A26,26,0,0,1,90,172Zm-12,0a14,14,0,0,0-14-14H54v28H64A14,14,0,0,0,78,172Zm84,8a34,34,0,0,1-34,34H112a6,6,0,0,1-6-6V152a6,6,0,0,1,6-6h16A34,34,0,0,1,162,180Zm-12,0a22,22,0,0,0-22-22H118v44h10A22,22,0,0,0,150,180ZM42,112V40A14,14,0,0,1,56,26h96a6,6,0,0,1,4.25,1.76l56,56A6,6,0,0,1,214,88v24a6,6,0,0,1-12,0V94H152a6,6,0,0,1-6-6V38H56a2,2,0,0,0-2,2v72a6,6,0,0,1-12,0ZM158,82h35.52L158,46.48Z"/></svg></span>
+  <div><h3>Un PDF escrito para agentes</h3><p>Las notas y la transcripción van en secciones separadas, cada una abierta por una frase que dice lo que contiene. Marcadores como [NOTE 2] y [CAPTURE 1] resisten la extracción de texto. Mis notas van primero, porque a veces llevan instrucciones para los agentes que leerán el archivo. Descarté el resumen por IA previsto: la interpretación se hace después, con otros agentes.</p></div>
+</li></ul>
+    </section>
+
+    <section class="psec"><h2 class="psec__title">Un hito, de principio a fin</h2><div class="flow"><ol class="flow__steps" style="--n:6"><li class="flow__step flow__step--human" data-reveal style="--i:0">
+  <strong>Especificación</strong>
+  <span>Hito, criterios, lo que no hay que hacer</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:1">
+  <strong>Claude programa</strong>
+  <span>Y se detiene con un plan de pruebas</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
+  <strong>Agentes revisores</strong>
+  <span>Cada hallazgo con su escenario de fallo</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:3">
+  <strong>Control final</strong>
+  <span>Una segunda pasada sobre las correcciones</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:4">
+  <strong>Reunión real</strong>
+  <span>Pruebo y traigo la página real</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:5">
+  <strong>Validación</strong>
+  <span>O una enmienda fechada a la especificación</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>A cargo de la IA</span><span><i class="flow__dot flow__dot--human"></i>Decisión humana</span></p></div></section>
+    
+    <section class="psec"><h2 class="psec__title">Lo que fue difícil</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>Líneas recicladas</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>En una reunión real, los subtítulos vivían en una lista virtualizada que separa y reutiliza líneas al desplazarse. La especificación trataba una línea separada como definitiva: duplicados y pérdidas estaban garantizados.</dd></div>
+    <div><dt>Lo que hice</dt><dd>Pedí la estrategia antes de cualquier código y rechacé una de sus señales, porque una frase puede aparecer de golpe sin ser una repetición. Claude sustituyó el seguimiento de nodos por un registro indexado por contenido y añadió contadores de decisiones al diagnóstico.</dd></div>
+    <div><dt>El resultado</dt><dd>En una reunión real de 3 horas: 1959 líneas, 2,9 % de duplicados residuales, ningún hueco. La fusión de los duplicados restantes sigue desactivada por defecto: el PDF conserva todo lo capturado.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Un título que no existía</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Un PDF salió con el nombre de un chat en lugar del de la reunión. Los dos selectores de título escritos en el hito 1 nunca habían coincidido, y un respaldo lo ocultaba.</dd></div>
+    <div><dt>Lo que hice</dt><dd>El diagnóstico enumera ahora cada selector candidato que nunca ha coincidido desde la instalación. Una captura del DOM en una reunión real demostró después que Teams no expone en absoluto el asunto de la reunión en la página.</dd></div>
+    <div><dt>El resultado</dt><dd>El título de la pestaña, reducido a su último segmento, pasó a ser la única fuente. Los seis candidatos muertos salieron del código, conservados como comentario con la fecha y el motivo.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:0">
+  <h3>Ninguna hora inventada</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Frente a una herramienta comercial en la misma reunión de 36 minutos, la extensión capturaba más líneas, 428 frente a unas 300. Pero mostraba 3 minutos sin ninguna línea y luego unas 50 líneas con el mismo segundo.</dd></div>
+    <div><dt>Lo que hice</dt><dd>Claude demostró que el hueco y el bloque eran en su mayor parte las mismas intervenciones, mostradas con retraso por Teams. Regla: ninguna interpolación. La caída se registra, la pastilla avisa durante la reunión y el PDF enmarca el bloque con el único intervalo horario seguro.</dd></div>
+    <div><dt>El resultado</dt><dd>Probado en un banco que simula la lista de subtítulos. La validación en una reunión real sigue pendiente.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">En cifras</h2>
+<dl class="figures"><div><dt>líneas de subtítulos en una reunión real de 3 horas, 2,9 % de duplicados</dt><dd>1959</dd></div><div><dt>agentes revisores repartidos en 18 workflows</dt><dd>50</dd></div><div><dt>defectos detectados por las revisiones, cada uno con su escenario de fallo</dt><dd>121</dd></div><div><dt>versiones en cinco semanas, de 0.1.0 a 0.14.0</dt><dd>31</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Capturas</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/pdf-transcript.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/meeting-recorder/pdf-transcript.webp" alt="Una página de transcripción del PDF generado por la extensión" width="1191" height="1684" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>El PDF generado al final de la reunión: la captura en su lugar en la transcripción con su leyenda, y luego un bloque de recuperación ([RATTRAPAGE]) cuyas horas se marcan como aproximadas. Reunión ficticia.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/side-panel.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/meeting-recorder/side-panel.webp" alt="El panel lateral durante una sesión" width="800" height="1615" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>El panel lateral: contador de líneas, notas, la diapositiva capturada con su leyenda y las 8 últimas líneas para comprobar la captura en directo. La interfaz está en francés. Reunión ficticia.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/meeting-recorder/diagnostic.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/meeting-recorder/diagnostic.webp" alt="El diagnóstico de selectores" width="1359" height="1549" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>El diagnóstico: decisiones de deduplicación (22 emitidas, 6 reciclajes silenciosos), la regla del título y cada selector que nunca ha coincidido desde la instalación.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">Competencias de IA demostradas</h2><ul class="tags"><li>Especificación antes del código</li><li>Hitos validados por una persona</li><li>Revisión multiagente adversarial</li><li>Pruebas de campo y diagnóstico integrado</li><li>Permisos mínimos</li><li>Documentos diseñados para agentes</li></ul></section>
+
+    <nav class="pnav" aria-label="Proyectos">
+      <a href="/portfolio/es/proyectos/agent-platform/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Proyecto anterior</small><span>Plataforma de agentes 24/7</span></a>
+      <a href="/portfolio/es/proyectos/admin-assistant/" class="pnav__next"><small>Proyecto siguiente<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Asistente administrativo de autónoma</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Sitio estático escrito con Claude Code, sin framework ni rastreadores.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Ampliar la imagen">
+  <img alt="">
+  <button type="button" aria-label="Cerrar"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=3cec1cb124" defer></script>
+</body>
+</html>
