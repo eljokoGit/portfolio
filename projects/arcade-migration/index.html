@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent-driven arcade cabinet migration | Bruno Lesgourgues</title>
-<meta name="description" content="Migrating an arcade cabinet to a dedicated Linux distribution, run by Claude Code over SSH, without ever deleting anything.">
+<meta name="description" content="Migrating an arcade cabinet to a dedicated Linux distribution, run by Claude Code over SSH. The agent never deletes anything itself.">
 <link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/arcade-migration/">
 <link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/arcade-migration/">
 <link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/arcade-migration/">
 <link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/arcade-migration/">
 <meta property="og:title" content="Agent-driven arcade cabinet migration | Bruno Lesgourgues">
-<meta property="og:description" content="Migrating an arcade cabinet to a dedicated Linux distribution, run by Claude Code over SSH, without ever deleting anything.">
+<meta property="og:description" content="Migrating an arcade cabinet to a dedicated Linux distribution, run by Claude Code over SSH. The agent never deletes anything itself.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/arcade/cover.webp">
 <meta name="robots" content="noindex">
@@ -42,7 +42,7 @@
       <a class="back" href="/portfolio/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>All projects</a>
       <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M176,110H152a6,6,0,0,1,0-12h24a6,6,0,0,1,0,12ZM104,98H94V88a6,6,0,0,0-12,0V98H72a6,6,0,0,0,0,12H82v10a6,6,0,0,0,12,0V110h10a6,6,0,0,0,0-12ZM239.84,199.5A34,34,0,0,1,212,214,34.11,34.11,0,0,1,188,204.05l-.26-.28L147.38,158H108.62L68.31,203.76,68,204A34,34,0,0,1,44,214a34,34,0,0,1-33.46-39.91s0-.06,0-.1L26.9,89.88A57.89,57.89,0,0,1,83.89,42H172a58.07,58.07,0,0,1,57.05,47.63c0,.07,0,.12,0,.19L245.46,174s0,.07,0,.11A33.75,33.75,0,0,1,239.84,199.5ZM172,146a46,46,0,0,0,0-92H83.89A45.9,45.9,0,0,0,38.71,92a.36.36,0,0,0,0,.1L22.33,176.23a22,22,0,0,0,37.11,19.45l42-47.65a6,6,0,0,1,4.5-2Zm61.67,30.23-9.79-50.35A58.06,58.06,0,0,1,172,158h-8.63l33.19,37.68a22,22,0,0,0,37.11-19.45Z"/></svg></span>
       <h1 class="intro__title">Agent-driven arcade cabinet migration</h1>
-      <p class="intro__lead">Migrating an arcade cabinet to a dedicated Linux distribution, run by Claude Code over SSH, without ever deleting anything.</p>
+      <p class="intro__lead">Migrating an arcade cabinet to a dedicated Linux distribution, run by Claude Code over SSH. The agent never deletes anything itself.</p>
       <div class="phead__row">
         <dl class="meta">
           <div><dt>Category</dt><dd>Data</dd></div>
@@ -69,10 +69,10 @@
       <h2 class="psec__title">What I did with AI</h2>
       <ul class="points"><li class="point" data-reveal style="--i:0">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M126,128a6,6,0,0,1-2.25,4.69l-40,32a6,6,0,0,1-7.5-9.38L110.4,128,76.25,100.69a6,6,0,1,1,7.5-9.38l40,32A6,6,0,0,1,126,128Zm50,26H136a6,6,0,0,0,0,12h40a6,6,0,0,0,0-12Zm54-98V200a14,14,0,0,1-14,14H40a14,14,0,0,1-14-14V56A14,14,0,0,1,40,42H216A14,14,0,0,1,230,56Zm-12,0a2,2,0,0,0-2-2H40a2,2,0,0,0-2,2V200a2,2,0,0,0,2,2H216a2,2,0,0,0,2-2Z"/></svg></span>
-  <div><h3>An agent that acts, under rules</h3><p>Claude Code runs commands itself over SSH. Nothing is deleted, everything is moved, and each script runs as a dry run until given `--go`.</p></div>
+  <div><h3>An agent that acts, under rules</h3><p>Claude Code runs commands itself over SSH. It moves, never deletes, and each script runs as a dry run until given `--go`. The final clean-up ran from its lists, reviewed and launched by me.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,67.76l-40-40A6,6,0,0,0,168,26H88A14,14,0,0,0,74,40V58H56A14,14,0,0,0,42,72V216a14,14,0,0,0,14,14H168a14,14,0,0,0,14-14V198h18a14,14,0,0,0,14-14V72A6,6,0,0,0,212.24,67.76ZM170,216a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V72a2,2,0,0,1,2-2h77.51L170,106.49Zm32-32a2,2,0,0,1-2,2H182V104a6,6,0,0,0-1.76-4.24l-40-40A6,6,0,0,0,136,58H86V40a2,2,0,0,1,2-2h77.51L202,74.49Zm-60-32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,152Zm0,32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,184Z"/></svg></span>
-  <div><h3>A numbered-file protocol</h3><p>Briefs and reports are exchanged as numbered files, from 001 to 066. The log is the source of truth after every compaction.</p></div>
+  <div><h3>A numbered-file protocol</h3><p>Briefs and reports are exchanged as numbered files, from 001 to 077. The log is the source of truth after every compaction.</p></div>
 </li></ul>
     </section>
 
@@ -87,7 +87,7 @@
   </dl>
 </article></div></section>
     <section class="psec"><h2 class="psec__title">By the numbers</h2>
-<dl class="figures"><div><dt>files inventoried</dt><dd>105 713</dd></div><div><dt>numbered exchanges with the agent</dt><dd>66</dd></div><div><dt>files deleted</dt><dd>0</dd></div></dl>
+<dl class="figures"><div><dt>files inventoried</dt><dd>105 713</dd></div><div><dt>numbered exchanges with the agent</dt><dd>77</dd></div><div><dt>files deleted by the agent</dt><dd>0</dd></div><div><dt>cleared by me, from lists checked by the agent</dt><dd>900 GB+</dd></div></dl>
 </section>
     <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/protocole.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/arcade/protocole.webp" alt="The exchange protocol with the agent" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The protocol: every report goes to a numbered file, the terminal only gets a few lines.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/echanges.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/arcade/echanges.webp" alt="The numbered exchange files" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>112 exchange files, numbered up to 066.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/releve-daphne.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/arcade/releve-daphne.webp" alt="An interactive test sheet" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>A test sheet generated by the agent: I tick what works on the cabinet, it produces a report for Claude Code.</figcaption></figure></div></section>
     <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Operator agent over SSH</li><li>File-based coordination</li><li>Dry run before execution</li><li>Hypothesis testing</li></ul></section>
