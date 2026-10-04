@@ -53,12 +53,12 @@
       <div class="phead__row">
         <dl class="meta">
           <div><dt>Categoría</dt><dd>Datos</dd></div>
-          <div><dt>Periodo</dt><dd>Agosto y septiembre de 2026</dd></div>
+          <div><dt>Periodo</dt><dd>De agosto a octubre de 2026</dd></div>
           <div><dt>Estado</dt><dd>Migración terminada</dd></div>
         </dl>
         
       </div>
-      <p class="phead__stack"><span>Tecnologías</span>Linux, SSH, Python, PowerShell, Claude Code</p>
+      <p class="phead__stack"><span>Tecnologías</span>Linux, SSH, Python, PowerShell, Claude Code, Claude Cowork</p>
     </div>
   </header>
 
@@ -69,7 +69,7 @@
   <div class="container pbody">
     <section class="psec psec--intro">
       <h2 class="psec__title">El proyecto</h2>
-      <div class="prose prose--lead"><p>Inventario de un disco de más de 1 TB, un plan de migración, ordenación por scripts de un catálogo de más de 100 000 archivos, ajustes del sistema y restauración en una máquina nueva.</p></div>
+      <div class="prose prose--lead"><p>Inventario de un disco de más de 1 TB, un plan de migración, ordenación por scripts de un catálogo de más de 100 000 archivos, ajustes del sistema y restauración en una máquina nueva. Después, una página web local para gestionar la selección de juegos desde un móvil, y una máquina cuyos botones ya no abren ningún menú.</p></div>
     </section>
 
     <section class="psec">
@@ -79,7 +79,10 @@
   <div><h3>Un agente que actúa, con reglas</h3><p>Claude Code ejecuta los comandos él mismo por SSH. Mueve, nunca borra, y cada script se ejecuta en simulación mientras no reciba `--go`.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,67.76l-40-40A6,6,0,0,0,168,26H88A14,14,0,0,0,74,40V58H56A14,14,0,0,0,42,72V216a14,14,0,0,0,14,14H168a14,14,0,0,0,14-14V198h18a14,14,0,0,0,14-14V72A6,6,0,0,0,212.24,67.76ZM170,216a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V72a2,2,0,0,1,2-2h77.51L170,106.49Zm32-32a2,2,0,0,1-2,2H182V104a6,6,0,0,0-1.76-4.24l-40-40A6,6,0,0,0,136,58H86V40a2,2,0,0,1,2-2h77.51L202,74.49Zm-60-32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,152Zm0,32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,184Z"/></svg></span>
-  <div><h3>Un protocolo de archivos numerados</h3><p>Las instrucciones y los informes se intercambian como archivos numerados, del 001 al 066. El registro es la fuente de verdad tras cada compactación.</p></div>
+  <div><h3>Un protocolo de archivos numerados</h3><p>Las instrucciones y los informes se intercambian como archivos numerados, del 001 al 131. El registro es la fuente de verdad tras cada compactación.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M245.48,125.57c-.34-.78-8.66-19.23-27.24-37.81C201,70.54,171.38,50,128,50S55,70.54,37.76,87.76c-18.58,18.58-26.9,37-27.24,37.81a6,6,0,0,0,0,4.88c.34.77,8.66,19.22,27.24,37.8C55,185.47,84.62,206,128,206s73-20.53,90.24-37.75c18.58-18.58,26.9-37,27.24-37.8A6,6,0,0,0,245.48,125.57ZM128,194c-31.38,0-58.78-11.42-81.45-33.93A134.77,134.77,0,0,1,22.69,128,134.56,134.56,0,0,1,46.55,95.94C69.22,73.42,96.62,62,128,62s58.78,11.42,81.45,33.94A134.56,134.56,0,0,1,233.31,128C226.94,140.21,195,194,128,194Zm0-112a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162Z"/></svg></span>
+  <div><h3>Un agente supervisor</h3><p>Una sesión de Cowork redacta las instrucciones, lee los informes detallados de Claude Code y me los resume en pocas líneas. Revisa el método antes de que yo decida.</p></div>
 </li></ul>
     </section>
 
@@ -92,12 +95,19 @@
     <div><dt>Lo que hice</dt><dd>Nueva consulta por huella y después lectura del título guardado en los propios archivos.</dd></div>
     <div><dt>El resultado</dt><dd>La causa real: archivos mal nombrados en origen. 24 pares corregidos.</dd></div>
   </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Quitar los menús sin tocar los juegos</h3>
+  <dl>
+    <div><dt>El problema</dt><dd>Los botones de la máquina abrían menús del sistema, pero la misma configuración de botones también controla todos los emuladores.</dd></div>
+    <div><dt>Lo que hice</dt><dd>El agente encontró un gancho de arranque en el propio código del sistema: carga una configuración sin menús solo para la rueda de juegos y luego restaura la original para los juegos. Después pulsó cada botón y cada combinación, con una captura tras cada uno, en un juego por emulador.</dd></div>
+    <div><dt>El resultado</dt><dd>Ningún menú en 13 emuladores, para los dos jugadores, y una configuración de los juegos idéntica a la original, hasta su huella.</dd></div>
+  </dl>
 </article></div></section>
     <section class="psec"><h2 class="psec__title">En cifras</h2>
-<dl class="figures"><div><dt>archivos inventariados</dt><dd>105 713</dd></div><div><dt>intercambios numerados con el agente</dt><dd>66</dd></div><div><dt>archivos borrados por el agente</dt><dd>0</dd></div></dl>
+<dl class="figures"><div><dt>archivos inventariados</dt><dd>105 713</dd></div><div><dt>intercambios numerados con el agente</dt><dd>131</dd></div><div><dt>archivos borrados por el agente</dt><dd>0</dd></div></dl>
 </section>
     <section class="psec"><h2 class="psec__title">Capturas</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/protocole.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/arcade/protocole.webp" alt="El protocolo de intercambio con el agente" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>El protocolo: cada informe va a un archivo numerado y el terminal solo recibe unas líneas.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/echanges.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/arcade/echanges.webp" alt="Los archivos de intercambio numerados" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>112 archivos de intercambio, numerados hasta 066.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/releve-daphne.webp" aria-label="Ampliar la imagen"><img src="/portfolio/assets/img/arcade/releve-daphne.webp" alt="Una ficha de prueba interactiva" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Una ficha de prueba generada por el agente: marco lo que funciona en la máquina y genera un informe para Claude Code.</figcaption></figure></div></section>
-    <section class="psec"><h2 class="psec__title">Competencias de IA demostradas</h2><ul class="tags"><li>Agente operador por SSH</li><li>Coordinación por archivos</li><li>Simulación antes de ejecutar</li><li>Verificación de hipótesis</li></ul></section>
+    <section class="psec"><h2 class="psec__title">Competencias de IA demostradas</h2><ul class="tags"><li>Agente operador por SSH</li><li>Coordinación por archivos</li><li>Simulación antes de ejecutar</li><li>Verificación de hipótesis</li><li>Supervisión de agentes</li></ul></section>
 
     <nav class="pnav" aria-label="Proyectos">
       <a href="/portfolio/es/proyectos/bank-reconciliation/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Proyecto anterior</small><span>Conciliación bancaria asistida por LLM</span></a>

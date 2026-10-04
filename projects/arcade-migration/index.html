@@ -53,12 +53,12 @@
       <div class="phead__row">
         <dl class="meta">
           <div><dt>Category</dt><dd>Data</dd></div>
-          <div><dt>Period</dt><dd>August and September 2026</dd></div>
+          <div><dt>Period</dt><dd>August to October 2026</dd></div>
           <div><dt>Status</dt><dd>Migration complete</dd></div>
         </dl>
         
       </div>
-      <p class="phead__stack"><span>Technologies</span>Linux, SSH, Python, PowerShell, Claude Code</p>
+      <p class="phead__stack"><span>Technologies</span>Linux, SSH, Python, PowerShell, Claude Code, Claude Cowork</p>
     </div>
   </header>
 
@@ -69,7 +69,7 @@
   <div class="container pbody">
     <section class="psec psec--intro">
       <h2 class="psec__title">The project</h2>
-      <div class="prose prose--lead"><p>Inventory of a 1 TB+ disk, a migration plan, scripted clean-up of a 100,000+ file catalogue, system settings and restoration on a new machine.</p></div>
+      <div class="prose prose--lead"><p>Inventory of a 1 TB+ disk, a migration plan, scripted clean-up of a 100,000+ file catalogue, system settings and restoration on a new machine. Then a local web page to manage the game selection from a phone, and a cabinet whose buttons no longer open any menu.</p></div>
     </section>
 
     <section class="psec">
@@ -79,7 +79,10 @@
   <div><h3>An agent that acts, under rules</h3><p>Claude Code runs commands itself over SSH. It moves, never deletes, and each script runs as a dry run until given `--go`.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,67.76l-40-40A6,6,0,0,0,168,26H88A14,14,0,0,0,74,40V58H56A14,14,0,0,0,42,72V216a14,14,0,0,0,14,14H168a14,14,0,0,0,14-14V198h18a14,14,0,0,0,14-14V72A6,6,0,0,0,212.24,67.76ZM170,216a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V72a2,2,0,0,1,2-2h77.51L170,106.49Zm32-32a2,2,0,0,1-2,2H182V104a6,6,0,0,0-1.76-4.24l-40-40A6,6,0,0,0,136,58H86V40a2,2,0,0,1,2-2h77.51L202,74.49Zm-60-32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,152Zm0,32a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h48A6,6,0,0,1,142,184Z"/></svg></span>
-  <div><h3>A numbered-file protocol</h3><p>Briefs and reports are exchanged as numbered files, from 001 to 066. The log is the source of truth after every compaction.</p></div>
+  <div><h3>A numbered-file protocol</h3><p>Briefs and reports are exchanged as numbered files, from 001 to 131. The log is the source of truth after every compaction.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M245.48,125.57c-.34-.78-8.66-19.23-27.24-37.81C201,70.54,171.38,50,128,50S55,70.54,37.76,87.76c-18.58,18.58-26.9,37-27.24,37.81a6,6,0,0,0,0,4.88c.34.77,8.66,19.22,27.24,37.8C55,185.47,84.62,206,128,206s73-20.53,90.24-37.75c18.58-18.58,26.9-37,27.24-37.8A6,6,0,0,0,245.48,125.57ZM128,194c-31.38,0-58.78-11.42-81.45-33.93A134.77,134.77,0,0,1,22.69,128,134.56,134.56,0,0,1,46.55,95.94C69.22,73.42,96.62,62,128,62s58.78,11.42,81.45,33.94A134.56,134.56,0,0,1,233.31,128C226.94,140.21,195,194,128,194Zm0-112a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162Z"/></svg></span>
+  <div><h3>A supervisor agent</h3><p>A Cowork session writes the briefs, reads Claude Code's detailed reports and sums them up for me in a few lines. It reviews the method before I decide.</p></div>
 </li></ul>
     </section>
 
@@ -92,12 +95,19 @@
     <div><dt>What I did</dt><dd>Re-querying by fingerprint, then reading the title stored in the files themselves.</dd></div>
     <div><dt>The result</dt><dd>The real cause: files misnamed at the source. 24 pairs fixed.</dd></div>
   </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Removing the menus without touching the games</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>The cabinet's buttons opened system menus, but the same button mapping also drives every emulator.</dd></div>
+    <div><dt>What I did</dt><dd>The agent found a startup hook in the system's own code, loads a menu-free mapping for the game wheel only, then puts the original back for the games. It then pressed every button and combination, with a screenshot after each one, in one game per emulator.</dd></div>
+    <div><dt>The result</dt><dd>No menu left across 13 emulators, for both players, and a game mapping identical to the original down to its checksum.</dd></div>
+  </dl>
 </article></div></section>
     <section class="psec"><h2 class="psec__title">By the numbers</h2>
-<dl class="figures"><div><dt>files inventoried</dt><dd>105 713</dd></div><div><dt>numbered exchanges with the agent</dt><dd>66</dd></div><div><dt>files deleted by the agent</dt><dd>0</dd></div></dl>
+<dl class="figures"><div><dt>files inventoried</dt><dd>105 713</dd></div><div><dt>numbered exchanges with the agent</dt><dd>131</dd></div><div><dt>files deleted by the agent</dt><dd>0</dd></div></dl>
 </section>
     <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/protocole.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/arcade/protocole.webp" alt="The exchange protocol with the agent" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The protocol: every report goes to a numbered file, the terminal only gets a few lines.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/echanges.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/arcade/echanges.webp" alt="The numbered exchange files" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>112 exchange files, numbered up to 066.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/arcade/releve-daphne.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/arcade/releve-daphne.webp" alt="An interactive test sheet" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>A test sheet generated by the agent: I tick what works on the cabinet, it produces a report for Claude Code.</figcaption></figure></div></section>
-    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Operator agent over SSH</li><li>File-based coordination</li><li>Dry run before execution</li><li>Hypothesis testing</li></ul></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Operator agent over SSH</li><li>File-based coordination</li><li>Dry run before execution</li><li>Hypothesis testing</li><li>Agent supervision</li></ul></section>
 
     <nav class="pnav" aria-label="Projects">
       <a href="/portfolio/projects/bank-reconciliation/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>LLM-assisted bank reconciliation</span></a>
