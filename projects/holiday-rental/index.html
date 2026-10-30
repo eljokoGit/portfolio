@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holiday rental agent | Bruno Lesgourgues</title>
+<meta name="description" content="The management of my seaside rental, rebuilt in a week with Claude Code: bookings read from email, replies drafted for guests, a guest space in four languages, and scheduled tasks run by Hermes.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/holiday-rental/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/holiday-rental/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/holiday-rental/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/holiday-rental/">
+<meta property="og:title" content="Holiday rental agent | Bruno Lesgourgues">
+<meta property="og:description" content="The management of my seaside rental, rebuilt in a week with Claude Code: bookings read from email, replies drafted for guests, a guest space in four languages, and scheduled tasks run by Hermes.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bruno Lesgourgues">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://eljokogit.github.io/portfolio/projects/holiday-rental/">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/location/trio.webp">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="1125">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://eljokogit.github.io/portfolio/assets/img/location/trio.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=e47603aad9">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/projects/" aria-current="page">Projects</a></li><li><a href="/portfolio/#method">Method</a></li><li><a href="/portfolio/#tools">Tools</a></li><li><a href="/portfolio/#contact">About</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Language"><span class="lang is-current" aria-current="true">EN</span><a class="lang" href="/portfolio/fr/projets/holiday-rental/" hreflang="fr" lang="fr">FR</a><a class="lang" href="/portfolio/es/proyectos/holiday-rental/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>All projects</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M240,210H222V131.17l5.76,5.76a6,6,0,0,0,8.48-8.49L137.9,30.09a14,14,0,0,0-19.8,0L19.76,128.44a6,6,0,0,0,8.48,8.49L34,131.17V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM46,119.17l80.58-80.59a2,2,0,0,1,2.84,0L210,119.17V210H158V152a6,6,0,0,0-6-6H104a6,6,0,0,0-6,6v58H46ZM146,210H110V158h36Z"/></svg></span>
+      <h1 class="intro__title">Holiday rental agent</h1>
+      <p class="intro__lead">The management of my seaside rental, rebuilt in a week with Claude Code: bookings read from email, replies drafted for guests, a guest space in four languages, and scheduled tasks run by Hermes.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Category</dt><dd>Apps</dd></div>
+          <div><dt>Period</dt><dd>October 2026</dd></div>
+          <div><dt>Status</dt><dd>In service: guest space online, bookings read every 15 minutes</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Node.js, SQLite, React, Python, Docker, Hermes, Discord</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/location/trio.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/trio.webp" alt="Three screens of the guest space: the stay, things to do and the events agenda, fictitious data" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">The project</h2>
+      <div class="prose prose--lead"><p>A seaside flat rented on Airbnb, managed from Spain. The app follows each stay step by step, from booking to review, and replaces a spreadsheet and messages written by hand.</p><p>Every 15 minutes, an agent reads the booking emails. A plain reader extracts the figures; when a field is missing or the numbers do not add up, Claude takes over and proposes a fix to the reader. Guest messages always go through Claude, which drafts a reply. Nothing is sent without me.</p><p>Guests get a private space opened with their booking code, in French, English, Spanish and German. Its sections open as the stay goes on, with 53 activities, 10 restaurants and a daily events agenda.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">What I did with AI</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></span>
+  <div><h3>Code first, AI when in doubt</h3><p>The reader handles the routine; Claude steps in on an uncertain email or a guest message. Replayed on 230 real emails of the year: the 35 booking confirmations matched the Airbnb history exactly, dates and net amount.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Zm-39.76-86.24a6,6,0,0,1,0,8.48l-48,48a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L116,167.51l43.76-43.75A6,6,0,0,1,168.24,123.76Z"/></svg></span>
+  <div><h3>Scheduled tasks in Hermes</h3><p>Hermes runs the jobs: mail every 15 minutes, the events agenda every night, a freshness check twice a week, a price review every Monday. Results land in one Discord channel. Claude stays the worker, launched only when there is work.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,82H182V48a14,14,0,0,0-14-14H40A14,14,0,0,0,26,48V176a6,6,0,0,0,3.42,5.41A5.86,5.86,0,0,0,32,182a6,6,0,0,0,3.77-1.33L73.71,150H74v34a14,14,0,0,0,14,14h94.29l37.94,30.67A6,6,0,0,0,224,230a5.86,5.86,0,0,0,2.58-.59A6,6,0,0,0,230,224V96A14,14,0,0,0,216,82ZM71.58,138a6,6,0,0,0-3.77,1.33L38,163.43V48a2,2,0,0,1,2-2H168a2,2,0,0,1,2,2v88a2,2,0,0,1-2,2ZM218,211.43l-29.81-24.1a6,6,0,0,0-3.77-1.33H88a2,2,0,0,1-2-2V150h82a14,14,0,0,0,14-14V94h34a2,2,0,0,1,2,2Z"/></svg></span>
+  <div><h3>225 conversations read</h3><p>Claude read 225 past exchanges with guests to write the frequently asked questions and the scheduled Airbnb messages, which I then validated one by one.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></svg></span>
+  <div><h3>Prices from 79 neighbours</h3><p>A year of prices by period, built from 79 comparable listings, in a spreadsheet of 443 formulas, all checked. Every Monday, a job says whether the market has moved enough to redo the analysis.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,42H48A14,14,0,0,0,34,56v56c0,51.94,25.12,83.4,46.2,100.64,22.73,18.6,45.27,24.89,46.22,25.15a6,6,0,0,0,3.16,0c.95-.26,23.49-6.55,46.22-25.15C196.88,195.4,222,163.94,222,112V56A14,14,0,0,0,208,42Zm2,70c0,37.76-13.94,68.39-41.44,91.06A131.17,131.17,0,0,1,128,225.72a130.94,130.94,0,0,1-40.56-22.66C59.94,180.39,46,149.76,46,112V56a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></svg></span>
+  <div><h3>Security decided upfront</h3><p>Each link is valid from booking to the day after departure, with no indexing, no analytics, and a lock after a few wrong attempts. The key box code never appears on the site.</p></div>
+</li></ul>
+    </section>
+
+    <section class="psec"><h2 class="psec__title">When a booking email arrives</h2><div class="flow"><ol class="flow__steps" style="--n:5"><li class="flow__step flow__step--code" data-reveal style="--i:0">
+  <strong>Hermes wakes up</strong>
+  <span>Every 15 minutes</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:1">
+  <strong>The reader extracts</strong>
+  <span>Dates, guests, amounts</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
+  <strong>Claude, if in doubt</strong>
+  <span>Missing field, figures that disagree, guest message</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:3">
+  <strong>Reply proposed</strong>
+  <span>In Discord, or as a Gmail draft</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:4">
+  <strong>I send</strong>
+  <span>Or I correct first</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Handled by AI</span><span><i class="flow__dot flow__dot--code"></i>Deterministic code</span><span><i class="flow__dot flow__dot--human"></i>Human decision</span></p></div></section>
+    
+    <section class="psec"><h2 class="psec__title">What was hard</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>A place reopened by mistake</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>The freshness agent marked a closed nature spot as open again, on the word of a secondary website.</dd></div>
+    <div><dt>What I did</dt><dd>A rule written into the job: official source first, and a closed place only reopens on proof. Each closure is now stored with its dates.</dd></div>
+    <div><dt>The result</dt><dd>Fixed the same day. Guests never see a place that is closed during their stay.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>A platform rule that changed the plan</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>The planned welcome relied on asking guests for their email. A new Airbnb rule forbids asking for any personal data from 20 November 2026.</dd></div>
+    <div><dt>What I did</dt><dd>Claude checked the policy before building further. The guest journey was redesigned around the private space and Airbnb's own scheduled messages.</dd></div>
+    <div><dt>The result</dt><dd>No more email request, and access never depends on the site: the arrival details are also in the Airbnb message three days before.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">By the numbers</h2>
+<dl class="figures"><div><dt>real emails replayed to test the reader</dt><dd>230</dd></div><div><dt>languages in the guest space</dt><dd>4</dd></div><div><dt>places re-checked twice a week</dt><dd>63</dd></div><div><dt>database versions in five days</dt><dd>18</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/accueil.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/accueil.webp" alt="The guest's stay page" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The stay: sections open step by step, from booking to departure. Data is fictitious.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/decouvrir.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/decouvrir.webp" alt="Things to do" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Things to do, chosen for the season and for a family with children, three per section before &quot;see more&quot;.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/agenda.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/agenda.webp" alt="The events agenda" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The agenda: three events picked for each day of the stay. Events are fictitious.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Agent with human approval</li><li>Code first, AI on doubt</li><li>Scheduled agent tasks</li><li>Testing on real data</li><li>Multilingual content</li><li>Security by design</li></ul></section>
+
+    <nav class="pnav" aria-label="Projects">
+      <a href="/portfolio/projects/park-copilot/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>Theme park day copilot</span></a>
+      <a href="/portfolio/projects/meestik/" class="pnav__next"><small>Next project<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Meestik</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Static site written with Claude Code, no framework, no tracker.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Enlarge image">
+  <img alt="">
+  <button type="button" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=e47603aad9" defer></script>
+</body>
+</html>

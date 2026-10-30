@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tour de contrôle des agents | Bruno Lesgourgues</title>
+<meta name="description" content="Un écran en pixel art qui montre en direct chaque session Claude, chaque tâche planifiée et chaque demande au serveur, avec les questions qui attendent ma réponse. Construit en deux jours avec Claude Code.">
+<link rel="alternate" hreflang="en" href="https://eljokogit.github.io/portfolio/projects/control-tower/">
+<link rel="alternate" hreflang="fr" href="https://eljokogit.github.io/portfolio/fr/projets/control-tower/">
+<link rel="alternate" hreflang="es" href="https://eljokogit.github.io/portfolio/es/proyectos/control-tower/">
+<link rel="alternate" hreflang="x-default" href="https://eljokogit.github.io/portfolio/projects/control-tower/">
+<meta property="og:title" content="Tour de contrôle des agents | Bruno Lesgourgues">
+<meta property="og:description" content="Un écran en pixel art qui montre en direct chaque session Claude, chaque tâche planifiée et chaque demande au serveur, avec les questions qui attendent ma réponse. Construit en deux jours avec Claude Code.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bruno Lesgourgues">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://eljokogit.github.io/portfolio/fr/projets/control-tower/">
+<meta property="og:image" content="https://eljokogit.github.io/portfolio/assets/img/tour/tour.webp">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="1125">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://eljokogit.github.io/portfolio/assets/img/tour/tour.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="/portfolio/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/portfolio/assets/css/styles.css?v=e47603aad9">
+<link rel="icon" href="/portfolio/assets/img/favicon.svg" type="image/svg+xml">
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-site-theme","dark")}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="/portfolio/fr/">Bruno Lesgourgues</a>
+    <ul class="nav__links"><li><a href="/portfolio/fr/projets/" aria-current="page">Projets</a></li><li><a href="/portfolio/fr/#method">Méthode</a></li><li><a href="/portfolio/fr/#tools">Outils</a></li><li><a href="/portfolio/fr/#contact">À propos</a></li></ul>
+    <div class="nav__tools">
+      <nav class="langs" aria-label="Langue"><a class="lang" href="/portfolio/projects/control-tower/" hreflang="en" lang="en">EN</a><span class="lang is-current" aria-current="true">FR</span><a class="lang" href="/portfolio/es/proyectos/control-tower/" hreflang="es" lang="es">ES</a></nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème">
+        <svg class="icon icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg><svg class="icon icon-moon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="project">
+  <header class="intro intro--project">
+    <div class="container">
+      <a class="back" href="/portfolio/fr/#projects"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Tous les projets</a>
+      <span class="avatar avatar--icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,82a6,6,0,0,0-6,6v18H187L182,55.4a6,6,0,0,0-2-3.88L137.11,13.37l-.15-.12a14,14,0,0,0-17.92,0l-.15.12L76,51.52a6,6,0,0,0-2,3.88L69,106H54V88a6,6,0,0,0-12,0v24a6,6,0,0,0,6,6H67.75l-9.69,96.67A14,14,0,0,0,72,230H184a14,14,0,0,0,13.93-15.36L188.25,118H208a6,6,0,0,0,6-6V88A6,6,0,0,0,208,82ZM126.77,22.42a2,2,0,0,1,2.46,0l31,27.58H95.77ZM85.43,62h85.14L175,106H134V88a6,6,0,0,0-12,0v18H81Zm100,155.35A2,2,0,0,1,184,218H72a2,2,0,0,1-2-2.16L74.2,174H181.8L186,215.81A2,2,0,0,1,185.48,217.35ZM180.6,162H75.4l4.41-44h96.38Z"/></svg></span>
+      <h1 class="intro__title">Tour de contrôle des agents</h1>
+      <p class="intro__lead">Un écran en pixel art qui montre en direct chaque session Claude, chaque tâche planifiée et chaque demande au serveur, avec les questions qui attendent ma réponse. Construit en deux jours avec Claude Code.</p>
+      <div class="phead__row">
+        <dl class="meta">
+          <div><dt>Catégorie</dt><dd>Systèmes d'agents</dd></div>
+          <div><dt>Période</dt><dd>Octobre 2026</dd></div>
+          <div><dt>Statut</dt><dd>En service dans la VM des agents, consultée depuis mon téléphone</dd></div>
+        </dl>
+        
+      </div>
+      <p class="phead__stack"><span>Technologies</span>Node.js, SQLite, Server-Sent Events, Claude Code hooks, Python, systemd</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="pcover"><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/tour/tour.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/tour/tour.webp" alt="La tour : un étage par sujet, un personnage par session, et le tableau des quêtes à gauche, données fictives" width="1800" height="1125" fetchpriority="high" decoding="async" sizes="(min-width: 1200px) 1100px, 100vw"></button></figure>
+  </div>
+
+  <div class="container pbody">
+    <section class="psec psec--intro">
+      <h2 class="psec__title">Le projet</h2>
+      <div class="prose prose--lead"><p>Avec une douzaine de sessions d'agents réparties entre mon PC, la VM des agents et le serveur, une question pouvait attendre des heures sans que je la voie. La tour montre un étage par sujet, un personnage par session, et un tableau des quêtes pour tout ce qui m'attend.</p><p>Chaque quête renvoie à sa session, et c'est là que je réponds. L'écran n'a aucune action d'écriture, pour qu'aucun programme ne puisse donner un accord à ma place.</p><p>Les crochets de Claude Code n'envoient que l'essentiel (état, outil, question), jamais les commandes ni les contenus. Un planning réunit les tâches planifiées de la VM et du PC, avec les échecs en rouge.</p></div>
+    </section>
+
+    <section class="psec">
+      <h2 class="psec__title">Ce que j'ai fait avec l'IA</h2>
+      <ul class="points"><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M236.24,67.76a6,6,0,0,0-8.48,0L192,103.51,152.49,64l35.75-35.76a6,6,0,0,0-8.48-8.48L144,55.51,116.24,27.76a6,6,0,1,0-8.48,8.48L115.51,44,61.13,98.38a38,38,0,0,0,0,53.75l17.13,17.12-50.5,50.51a6,6,0,1,0,8.48,8.48l50.51-50.5,17.13,17.13a38,38,0,0,0,53.74,0L212,140.49l7.76,7.75a6,6,0,0,0,8.48-8.48L200.49,112l35.75-35.76A6,6,0,0,0,236.24,67.76ZM149.13,186.38a26,26,0,0,1-36.77,0L69.62,143.64a26,26,0,0,1,0-36.77L124,52.49,203.51,132Z"/></svg></span>
+  <div><h3>Des crochets comme capteurs</h3><p>8 événements de Claude Code, de l'ouverture à la fermeture d'une session, sont envoyés sans attendre, pour ne jamais ralentir une session. Une question posée avec l'outil de questions, une demande d'autorisation ou un dernier message qui finit par une question devient une quête.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M245.48,125.57c-.34-.78-8.66-19.23-27.24-37.81C201,70.54,171.38,50,128,50S55,70.54,37.76,87.76c-18.58,18.58-26.9,37-27.24,37.81a6,6,0,0,0,0,4.88c.34.77,8.66,19.22,27.24,37.8C55,185.47,84.62,206,128,206s73-20.53,90.24-37.75c18.58-18.58,26.9-37,27.24-37.8A6,6,0,0,0,245.48,125.57ZM128,194c-31.38,0-58.78-11.42-81.45-33.93A134.77,134.77,0,0,1,22.69,128,134.56,134.56,0,0,1,46.55,95.94C69.22,73.42,96.62,62,128,62s58.78,11.42,81.45,33.94A134.56,134.56,0,0,1,233.31,128C226.94,140.21,195,194,128,194Zm0-112a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162Z"/></svg></span>
+  <div><h3>En lecture seule par principe</h3><p>L'écran ne fait que montrer. Seuls les liens https sont gardés, tout s'affiche en texte, et les événements reçus sont contrôlés sur leur hôte et leur origine.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,50H134V16a6,6,0,0,0-12,0V50H56A30,30,0,0,0,26,80V192a30,30,0,0,0,30,30H200a30,30,0,0,0,30-30V80A30,30,0,0,0,200,50Zm18,142a18,18,0,0,1-18,18H56a18,18,0,0,1-18-18V80A18,18,0,0,1,56,62H200a18,18,0,0,1,18,18ZM74,108a10,10,0,1,1,10,10A10,10,0,0,1,74,108Zm88,0a10,10,0,1,1,10,10A10,10,0,0,1,162,108Zm2,30H92a26,26,0,0,0,0,52h72a26,26,0,0,0,0-52Zm-22,12v28H114V150ZM78,164a14,14,0,0,1,14-14h10v28H92A14,14,0,0,1,78,164Zm86,14H154V150h10a14,14,0,0,1,0,28Z"/></svg></span>
+  <div><h3>Relue par un autre agent</h3><p>L'agent qui gère le serveur a relu chaque livraison avant d'installer le service. Ses remarques sont devenues des commits : contrôle de l'hôte et de l'origine, et un script de livraison qui refuse du code non commité.</p></div>
+</li><li class="point" data-reveal style="--i:1">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M199.37,55.31A101.32,101.32,0,0,0,128,26h-1A102,102,0,0,0,26,128c0,42.09,26.07,77.44,68,92.26A30.21,30.21,0,0,0,104.11,222,30.06,30.06,0,0,0,134,192a18,18,0,0,1,18-18h46.21a29.82,29.82,0,0,0,29.25-23.31A102.71,102.71,0,0,0,230,127.11,101.25,101.25,0,0,0,199.37,55.31ZM215.76,148a17.89,17.89,0,0,1-17.55,14H152a30,30,0,0,0-30,30,18,18,0,0,1-24,17C61,195.86,38,164.85,38,128a90,90,0,0,1,89.07-90H128a90.34,90.34,0,0,1,90,89.22A90.46,90.46,0,0,1,215.76,148ZM138,76a10,10,0,1,1-10-10A10,10,0,0,1,138,76ZM94,100A10,10,0,1,1,84,90,10,10,0,0,1,94,100Zm0,56a10,10,0,1,1-10-10A10,10,0,0,1,94,156Zm88-56a10,10,0,1,1-10-10A10,10,0,0,1,182,100Z"/></svg></span>
+  <div><h3>Une maquette avant le code</h3><p>La conception puis le style pixel art ont été validés sur maquette avant tout code. Les personnages sont des grilles de lettres, une couleur par lettre, et une police pixel jugée peu lisible a été remplacée le jour même.</p></div>
+</li><li class="point" data-reveal style="--i:0">
+  <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,90a38,38,0,1,0,38,38A38,38,0,0,0,128,90Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,154Zm78-26a77.74,77.74,0,0,1-19.86,52,6,6,0,0,1-8.94-8,65.93,65.93,0,0,0,0-88,6,6,0,1,1,8.94-8A77.74,77.74,0,0,1,206,128ZM67.18,102.31A65.93,65.93,0,0,0,78.8,172a6,6,0,0,1-.47,8.47,6,6,0,0,1-8.47-.47,77.93,77.93,0,0,1,0-104,6,6,0,1,1,8.94,8A66.21,66.21,0,0,0,67.18,102.31ZM246,128a117.71,117.71,0,0,1-33.71,82.58,6,6,0,0,1-8.58-8.4,105.88,105.88,0,0,0,0-148.36,6,6,0,0,1,8.58-8.4A117.71,117.71,0,0,1,246,128ZM52.29,202.18a6,6,0,0,1-8.58,8.4,117.92,117.92,0,0,1,0-165.16,6,6,0,1,1,8.58,8.4,105.88,105.88,0,0,0,0,148.36Z"/></svg></span>
+  <div><h3>Le serveur s'y branche</h3><p>L'agent du serveur envoie sa file de demandes dès qu'elle change. Cette source n'est acceptée que venant de l'hôte lui-même : un essai depuis un autre appareil du réseau privé est refusé.</p></div>
+</li></ul>
+    </section>
+
+    <section class="psec"><h2 class="psec__title">D'une question à ma réponse</h2><div class="flow"><ol class="flow__steps" style="--n:5"><li class="flow__step flow__step--ai" data-reveal style="--i:0">
+  <strong>Un agent demande</strong>
+  <span>Question, autorisation, choix</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:1">
+  <strong>Le crochet prévient</strong>
+  <span>L'essentiel seulement</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:2">
+  <strong>Une quête s'ouvre</strong>
+  <span>Au tableau, avec son lien</span>
+</li><li class="flow__step flow__step--human" data-reveal style="--i:3">
+  <strong>Je réponds</strong>
+  <span>Dans la session elle-même</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:4">
+  <strong>La quête se ferme</strong>
+  <span>Comptée dans le score du jour</span>
+</li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Confié à l'IA</span><span><i class="flow__dot flow__dot--code"></i>Code déterministe</span><span><i class="flow__dot flow__dot--human"></i>Décision humaine</span></p></div></section>
+    
+    <section class="psec"><h2 class="psec__title">Ce qui a été difficile</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>Des événements perdus à cause d'un antivirus</h3>
+  <dl>
+    <div><dt>Le problème</dt><dd>Des événements des crochets du PC n'arrivaient jamais à la tour, sans aucune erreur visible.</dd></div>
+    <div><dt>Ce que j'ai fait</dt><dd>Cause trouvée : une variable d'environnement posée par l'antivirus faisait échouer la bibliothèque HTTP standard de Python. Le crochet est passé à un client plus bas niveau et écrit désormais ses erreurs dans un journal.</dd></div>
+    <div><dt>Le résultat</dt><dd>Plus d'événements perdus, et un échec laisse une trace au lieu de disparaître.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
+  <h3>Des questions orphelines</h3>
+  <dl>
+    <div><dt>Le problème</dt><dd>Une session tuée sans se fermer proprement laissait sa question au tableau pour toujours.</dd></div>
+    <div><dt>Ce que j'ai fait</dt><dd>Le crochet joint désormais la liste des sessions encore ouvertes sur le PC. La tour termine celles qui en sont absentes depuis deux minutes et ferme leurs questions.</dd></div>
+    <div><dt>Le résultat</dt><dd>13 sessions disparues terminées d'un coup, et celle encore vivante laissée intacte.</dd></div>
+  </dl>
+</article></div></section>
+    <section class="psec"><h2 class="psec__title">En chiffres</h2>
+<dl class="figures"><div><dt>commits en deux jours</dt><dd>24</dd></div><div><dt>dépendance : uniquement ce que Node intègre</dt><dd>0</dd></div><div><dt>tâches planifiées sur un seul planning</dt><dd>45</dd></div><div><dt>événements de Claude Code transformés en vue en direct</dt><dd>8</dd></div></dl>
+</section>
+    <section class="psec"><h2 class="psec__title">Captures</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/tour/tour.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/tour/tour.webp" alt="La tour et le tableau des quêtes" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>La tour : qui travaille sur quoi, et les quêtes qui m'attendent. Les données sont fictives.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel" type="button" data-zoom="/portfolio/assets/img/tour/village-planning.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/tour/village-planning.webp" alt="Les sujets calmes et le planning" width="1800" height="1125" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Au pied de la tour, les sujets calmes en maisons ; à gauche, les échanges avec l'agent du serveur et le planning, échecs en tête.</figcaption></figure></div></section>
+    <section class="psec"><h2 class="psec__title">Compétences IA démontrées</h2><ul class="tags"><li>Crochets Claude Code</li><li>Humain décideur</li><li>Lecture seule par principe</li><li>Revue entre agents</li><li>Maquette avant le code</li><li>Observabilité des agents</li></ul></section>
+
+    <nav class="pnav" aria-label="Projets">
+      <a href="/portfolio/fr/projets/agent-platform/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Projet précédent</small><span>Plateforme d'agents 24/7</span></a>
+      <a href="/portfolio/fr/projets/meeting-recorder/" class="pnav__next"><small>Projet suivant<svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></small><span>Enregistreur de réunions Teams</span></a>
+    </nav>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>Bruno Lesgourgues, 2026</p>
+    <p>Site statique écrit avec Claude Code, sans framework ni traceur.</p>
+  </div>
+</footer>
+<dialog class="lightbox" data-lightbox aria-label="Agrandir l'image">
+  <img alt="">
+  <button type="button" aria-label="Fermer"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,195.76a6,6,0,1,1-8.48,8.48L128,136.49,60.24,204.24a6,6,0,0,1-8.48-8.48L119.51,128,51.76,60.24a6,6,0,0,1,8.48-8.48L128,119.51l67.76-67.75a6,6,0,0,1,8.48,8.48L136.49,128Z"/></svg></button>
+</dialog>
+<script src="/portfolio/assets/js/main.js?v=e47603aad9" defer></script>
+</body>
+</html>
