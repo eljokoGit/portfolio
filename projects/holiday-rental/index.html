@@ -53,7 +53,7 @@
       <div class="phead__row">
         <dl class="meta">
           <div><dt>Category</dt><dd>Apps</dd></div>
-          <div><dt>Period</dt><dd>October 2026</dd></div>
+          <div><dt>Period</dt><dd>October and November 2026</dd></div>
           <div><dt>Status</dt><dd>In service: guest space online, bookings read every 15 minutes</dd></div>
         </dl>
         
@@ -69,14 +69,14 @@
   <div class="container pbody">
     <section class="psec psec--intro">
       <h2 class="psec__title">The project</h2>
-      <div class="prose prose--lead"><p>A seaside flat rented on Airbnb, managed from Spain. The app follows each stay step by step, from booking to review, and replaces a spreadsheet and messages written by hand.</p><p>Every 15 minutes, an agent reads the booking emails. A plain reader extracts the figures; when a field is missing or the numbers do not add up, Claude takes over and proposes a fix to the reader. Guest messages always go through Claude, which drafts a reply. Nothing is sent without me.</p><p>Guests get a private space opened with their booking code, in French, English, Spanish and German. Its sections open as the stay goes on, with 53 activities, 10 restaurants and a daily events agenda.</p></div>
+      <div class="prose prose--lead"><p>A seaside flat rented on Airbnb, managed from Spain. The app follows each stay step by step, from booking to review, and replaces a spreadsheet and messages written by hand.</p><p>Every 15 minutes, Hermes collects the booking emails and a Claude agent reads each one: dates, guests, amounts, and any message from a guest, for which it drafts a reply. A plain keyword reader gives a second reading. When the two disagree, or when the agent has been silent for two hours, the Discord channel is told. Nothing is sent without me.</p><p>Guests get a private space opened with their booking code, in French, English, Spanish and German. Its sections open as the stay goes on, with 53 activities, 10 restaurants and a daily events agenda. A separate page, for the person who does the cleaning, lists the coming stays with the instructions the agent keeps for them.</p></div>
     </section>
 
     <section class="psec">
       <h2 class="psec__title">What I did with AI</h2>
       <ul class="points"><li class="point" data-reveal style="--i:0">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></span>
-  <div><h3>Code first, AI when in doubt</h3><p>The reader handles the routine; Claude steps in on an uncertain email or a guest message. Replayed on 230 real emails of the year: the 35 booking confirmations matched the Airbnb history exactly, dates and net amount.</p></div>
+  <div><h3>The agent reads, the code double-checks</h3><p>The keyword reader came first, replayed on 230 real emails of the year: the 35 booking confirmations matched the Airbnb history exactly, dates and net amount. It is now the second opinion: Claude reads every email, and the script's reading is a hint for the agent and a fallback if it stops answering.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Zm-39.76-86.24a6,6,0,0,1,0,8.48l-48,48a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L116,167.51l43.76-43.75A6,6,0,0,1,168.24,123.76Z"/></svg></span>
   <div><h3>Scheduled tasks in Hermes</h3><p>Hermes runs the jobs: mail every 15 minutes, the events agenda every night, a freshness check twice a week, a price review every Monday. Results land in one Discord channel. Claude stays the worker, launched only when there is work.</p></div>
@@ -85,7 +85,7 @@
   <div><h3>225 conversations read</h3><p>Claude read 225 past exchanges with guests to write the frequently asked questions and the scheduled Airbnb messages, which I then validated one by one.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></svg></span>
-  <div><h3>Prices from 79 neighbours</h3><p>A year of prices by period, built from 79 comparable listings, in a spreadsheet of 443 formulas, all checked. Every Monday, a job says whether the market has moved enough to redo the analysis.</p></div>
+  <div><h3>Prices from 79 neighbours</h3><p>A year of prices by period, built from 79 comparable listings, in a spreadsheet of 443 formulas, all checked. Every Monday, Hermes opens a Claude session that reviews the market, holidays, weather and booking pace, then posts the price changes it proposes. I enter them myself, or not.</p></div>
 </li><li class="point" data-reveal style="--i:0">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,42H48A14,14,0,0,0,34,56v56c0,51.94,25.12,83.4,46.2,100.64,22.73,18.6,45.27,24.89,46.22,25.15a6,6,0,0,0,3.16,0c.95-.26,23.49-6.55,46.22-25.15C196.88,195.4,222,163.94,222,112V56A14,14,0,0,0,208,42Zm2,70c0,37.76-13.94,68.39-41.44,91.06A131.17,131.17,0,0,1,128,225.72a130.94,130.94,0,0,1-40.56-22.66C59.94,180.39,46,149.76,46,112V56a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></svg></span>
   <div><h3>Security decided upfront</h3><p>Each link is valid from booking to the day after departure, with no indexing, no analytics, and a lock after a few wrong attempts. The key box code never appears on the site.</p></div>
@@ -95,12 +95,12 @@
     <section class="psec"><h2 class="psec__title">When a booking email arrives</h2><div class="flow"><ol class="flow__steps" style="--n:5"><li class="flow__step flow__step--code" data-reveal style="--i:0">
   <strong>Hermes wakes up</strong>
   <span>Every 15 minutes</span>
-</li><li class="flow__step flow__step--code" data-reveal style="--i:1">
-  <strong>The reader extracts</strong>
-  <span>Dates, guests, amounts</span>
-</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
-  <strong>Claude, if in doubt</strong>
-  <span>Missing field, figures that disagree, guest message</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:1">
+  <strong>Claude reads</strong>
+  <span>Dates, guests, amounts, guest message</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:2">
+  <strong>The reader double-checks</strong>
+  <span>A disagreement is reported in the channel</span>
 </li><li class="flow__step flow__step--code" data-reveal style="--i:3">
   <strong>Reply proposed</strong>
   <span>In Discord, or as a Gmail draft</span>
@@ -110,13 +110,20 @@
 </li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Handled by AI</span><span><i class="flow__dot flow__dot--code"></i>Deterministic code</span><span><i class="flow__dot flow__dot--human"></i>Human decision</span></p></div></section>
     
     <section class="psec"><h2 class="psec__title">What was hard</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>Three emails the reader missed</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>On 27 October the listing got a new title. The keyword reader, tested on 230 emails, no longer recognised the booking emails: three went unread, and one guest message got no reply.</dd></div>
+    <div><dt>What I did</dt><dd>I asked for an agent rather than a sturdier script. Claude now reads every email; the script's reading is kept as a hint and compared with the agent's. A disagreement, an unfiled email or an agent silent for two hours is reported in the channel.</dd></div>
+    <div><dt>The result</dt><dd>Reversed in a day: the code is the safety net, the agent does the reading. Tests on real emails had proved the script right for the past, not for the next change.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
   <h3>A place reopened by mistake</h3>
   <dl>
     <div><dt>The problem</dt><dd>The freshness agent marked a closed nature spot as open again, on the word of a secondary website.</dd></div>
     <div><dt>What I did</dt><dd>A rule written into the job: official source first, and a closed place only reopens on proof. Each closure is now stored with its dates.</dd></div>
     <div><dt>The result</dt><dd>Fixed the same day. Guests never see a place that is closed during their stay.</dd></div>
   </dl>
-</article><article class="story" data-reveal style="--i:1">
+</article><article class="story" data-reveal style="--i:0">
   <h3>A platform rule that changed the plan</h3>
   <dl>
     <div><dt>The problem</dt><dd>The planned welcome relied on asking guests for their email. A new Airbnb rule forbids asking for any personal data from 20 November 2026.</dd></div>
@@ -128,7 +135,7 @@
 <dl class="figures"><div><dt>real emails replayed to test the reader</dt><dd>230</dd></div><div><dt>languages in the guest space</dt><dd>4</dd></div><div><dt>places re-checked twice a week</dt><dd>63</dd></div><div><dt>database versions in five days</dt><dd>18</dd></div></dl>
 </section>
     <section class="psec"><h2 class="psec__title">Screenshots</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/accueil.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/accueil.webp" alt="The guest's stay page" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The stay: sections open step by step, from booking to departure. Data is fictitious.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/decouvrir.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/decouvrir.webp" alt="Things to do" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Things to do, chosen for the season and for a family with children, three per section before &quot;see more&quot;.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/agenda.webp" aria-label="Enlarge image"><img src="/portfolio/assets/img/location/agenda.webp" alt="The events agenda" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>The agenda: three events picked for each day of the stay. Events are fictitious.</figcaption></figure></div></section>
-    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Agent with human approval</li><li>Code first, AI on doubt</li><li>Scheduled agent tasks</li><li>Testing on real data</li><li>Multilingual content</li><li>Security by design</li></ul></section>
+    <section class="psec"><h2 class="psec__title">AI skills shown</h2><ul class="tags"><li>Agent with human approval</li><li>Agent checked by code</li><li>Scheduled agent tasks</li><li>Testing on real data</li><li>Multilingual content</li><li>Security by design</li></ul></section>
 
     <nav class="pnav" aria-label="Projects">
       <a href="/portfolio/projects/park-copilot/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Previous project</small><span>Theme park day copilot</span></a>

@@ -53,7 +53,7 @@
       <div class="phead__row">
         <dl class="meta">
           <div><dt>Catégorie</dt><dd>Applications</dd></div>
-          <div><dt>Période</dt><dd>Octobre 2026</dd></div>
+          <div><dt>Période</dt><dd>Octobre et novembre 2026</dd></div>
           <div><dt>Statut</dt><dd>En service : espace voyageur en ligne, réservations relevées toutes les 15 minutes</dd></div>
         </dl>
         
@@ -69,14 +69,14 @@
   <div class="container pbody">
     <section class="psec psec--intro">
       <h2 class="psec__title">Le projet</h2>
-      <div class="prose prose--lead"><p>Un appartement en bord de mer loué sur Airbnb, géré depuis l'Espagne. L'appli suit chaque séjour étape par étape, de la réservation à l'avis, et remplace un tableur et des messages écrits à la main.</p><p>Toutes les 15 minutes, un agent lit les mails de réservation. Un lecteur simple extrait les chiffres ; s'il manque un champ ou si les montants ne se tiennent pas, Claude prend le relais et propose une correction du lecteur. Les messages des voyageurs passent toujours par Claude, qui prépare une réponse. Rien ne part sans moi.</p><p>Les voyageurs ont un espace privé, ouvert avec leur code de réservation, en français, anglais, espagnol et allemand. Ses rubriques s'ouvrent au fil du séjour, avec 53 activités, 10 restaurants et un agenda des événements du jour.</p></div>
+      <div class="prose prose--lead"><p>Un appartement en bord de mer loué sur Airbnb, géré depuis l'Espagne. L'appli suit chaque séjour étape par étape, de la réservation à l'avis, et remplace un tableur et des messages écrits à la main.</p><p>Toutes les 15 minutes, Hermes relève les mails de réservation et un agent Claude lit chacun d'eux : dates, voyageurs, montants, et le message éventuel d'un voyageur, pour lequel il prépare une réponse. Un lecteur simple, par mots-clés, donne une seconde lecture. Quand les deux divergent, ou quand l'agent se tait depuis deux heures, le salon Discord est prévenu. Rien ne part sans moi.</p><p>Les voyageurs ont un espace privé, ouvert avec leur code de réservation, en français, anglais, espagnol et allemand. Ses rubriques s'ouvrent au fil du séjour, avec 53 activités, 10 restaurants et un agenda des événements du jour. Une page à part, pour la personne qui fait le ménage, liste les séjours à venir avec les consignes que l'agent tient pour elle.</p></div>
     </section>
 
     <section class="psec">
       <h2 class="psec__title">Ce que j'ai fait avec l'IA</h2>
       <ul class="points"><li class="point" data-reveal style="--i:0">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50ZM208.58,62,128,135.86,47.42,62ZM216,194H40a2,2,0,0,1-2-2V69.64l86,78.78a6,6,0,0,0,8.1,0L218,69.64V192A2,2,0,0,1,216,194Z"/></svg></span>
-  <div><h3>Le code d'abord, l'IA en cas de doute</h3><p>Le lecteur fait la routine ; Claude intervient sur un mail incertain ou un message de voyageur. Rejoué sur 230 vrais mails de l'année : les 35 confirmations de réservation collent exactement à l'historique Airbnb, dates et net compris.</p></div>
+  <div><h3>L'agent lit, le code contre-vérifie</h3><p>Le lecteur par mots-clés est venu en premier, rejoué sur 230 vrais mails de l'année : les 35 confirmations de réservation collent exactement à l'historique Airbnb, dates et net compris. Il est devenu le second avis : Claude lit chaque mail, et la lecture du script sert d'indice à l'agent, et de secours s'il ne répond plus.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Zm-39.76-86.24a6,6,0,0,1,0,8.48l-48,48a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L116,167.51l43.76-43.75A6,6,0,0,1,168.24,123.76Z"/></svg></span>
   <div><h3>Des tâches planifiées dans Hermes</h3><p>Hermes lance les tâches : les mails toutes les 15 minutes, l'agenda chaque nuit, un contrôle de fraîcheur deux fois par semaine, un suivi des prix chaque lundi. Les résultats arrivent dans un seul salon Discord. Claude reste l'ouvrier, lancé seulement quand il y a du travail.</p></div>
@@ -85,7 +85,7 @@
   <div><h3>225 échanges relus</h3><p>Claude a relu 225 échanges passés avec des voyageurs pour écrire les questions fréquentes et les messages programmés d'Airbnb, que j'ai ensuite validés un par un.</p></div>
 </li><li class="point" data-reveal style="--i:1">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></svg></span>
-  <div><h3>Des prix tirés de 79 voisins</h3><p>Une année de prix par période, construite à partir de 79 annonces comparables, dans un tableur de 443 formules, toutes vérifiées. Chaque lundi, une tâche dit si le marché a assez bougé pour refaire l'analyse.</p></div>
+  <div><h3>Des prix tirés de 79 voisins</h3><p>Une année de prix par période, construite à partir de 79 annonces comparables, dans un tableur de 443 formules, toutes vérifiées. Chaque lundi, Hermes ouvre une session Claude qui relit le marché, les vacances, la météo et le rythme des réservations, puis poste les changements de prix qu'elle propose. C'est moi qui les saisis, ou pas.</p></div>
 </li><li class="point" data-reveal style="--i:0">
   <span class="point__icon"><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M208,42H48A14,14,0,0,0,34,56v56c0,51.94,25.12,83.4,46.2,100.64,22.73,18.6,45.27,24.89,46.22,25.15a6,6,0,0,0,3.16,0c.95-.26,23.49-6.55,46.22-25.15C196.88,195.4,222,163.94,222,112V56A14,14,0,0,0,208,42Zm2,70c0,37.76-13.94,68.39-41.44,91.06A131.17,131.17,0,0,1,128,225.72a130.94,130.94,0,0,1-40.56-22.66C59.94,180.39,46,149.76,46,112V56a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></svg></span>
   <div><h3>Une sécurité décidée d'avance</h3><p>Chaque lien est valable de la réservation au lendemain du départ, sans indexation, sans statistiques, et bloqué après quelques essais ratés. Le code du boîtier à clés n'apparaît jamais sur le site.</p></div>
@@ -95,12 +95,12 @@
     <section class="psec"><h2 class="psec__title">Quand un mail de réservation arrive</h2><div class="flow"><ol class="flow__steps" style="--n:5"><li class="flow__step flow__step--code" data-reveal style="--i:0">
   <strong>Hermes se réveille</strong>
   <span>Toutes les 15 minutes</span>
-</li><li class="flow__step flow__step--code" data-reveal style="--i:1">
-  <strong>Le lecteur extrait</strong>
-  <span>Dates, voyageurs, montants</span>
-</li><li class="flow__step flow__step--ai" data-reveal style="--i:2">
-  <strong>Claude, en cas de doute</strong>
-  <span>Champ manquant, chiffres qui divergent, message de voyageur</span>
+</li><li class="flow__step flow__step--ai" data-reveal style="--i:1">
+  <strong>Claude lit</strong>
+  <span>Dates, voyageurs, montants, message du voyageur</span>
+</li><li class="flow__step flow__step--code" data-reveal style="--i:2">
+  <strong>Le lecteur contre-vérifie</strong>
+  <span>Un désaccord est signalé dans le salon</span>
 </li><li class="flow__step flow__step--code" data-reveal style="--i:3">
   <strong>Réponse proposée</strong>
   <span>Dans Discord, ou en brouillon Gmail</span>
@@ -110,13 +110,20 @@
 </li></ol><p class="flow__legend"><span><i class="flow__dot flow__dot--ai"></i>Confié à l'IA</span><span><i class="flow__dot flow__dot--code"></i>Code déterministe</span><span><i class="flow__dot flow__dot--human"></i>Décision humaine</span></p></div></section>
     
     <section class="psec"><h2 class="psec__title">Ce qui a été difficile</h2><div class="stories"><article class="story" data-reveal style="--i:0">
+  <h3>Trois mails ratés par le lecteur</h3>
+  <dl>
+    <div><dt>Le problème</dt><dd>Le 27 octobre, l'annonce a changé de titre. Le lecteur par mots-clés, testé sur 230 mails, ne reconnaissait plus les mails de réservation : trois sont passés sans lecture, et un message de voyageur est resté sans réponse.</dd></div>
+    <div><dt>Ce que j'ai fait</dt><dd>J'ai demandé un agent plutôt qu'un script plus solide. Claude lit désormais chaque mail ; la lecture du script est gardée comme indice et comparée à celle de l'agent. Un désaccord, un mail non rangé ou un agent muet depuis deux heures sont signalés dans le salon.</dd></div>
+    <div><dt>Le résultat</dt><dd>Inversé en une journée : le code est le filet, l'agent fait la lecture. Les tests sur de vrais mails avaient prouvé le script pour le passé, pas pour le changement suivant.</dd></div>
+  </dl>
+</article><article class="story" data-reveal style="--i:1">
   <h3>Un lieu rouvert à tort</h3>
   <dl>
     <div><dt>Le problème</dt><dd>L'agent de fraîcheur a déclaré rouvert un site naturel fermé, sur la foi d'un site web secondaire.</dd></div>
     <div><dt>Ce que j'ai fait</dt><dd>Une règle inscrite dans la tâche : la source officielle d'abord, et un lieu fermé ne rouvre que sur preuve. Chaque fermeture est désormais gardée avec ses dates.</dd></div>
     <div><dt>Le résultat</dt><dd>Corrigé le jour même. Les voyageurs ne voient jamais un lieu fermé pendant leur séjour.</dd></div>
   </dl>
-</article><article class="story" data-reveal style="--i:1">
+</article><article class="story" data-reveal style="--i:0">
   <h3>Une règle de la plateforme qui change le plan</h3>
   <dl>
     <div><dt>Le problème</dt><dd>L'accueil prévu reposait sur une demande d'email aux voyageurs. Une nouvelle règle d'Airbnb interdit de demander toute donnée personnelle à partir du 20 novembre 2026.</dd></div>
@@ -128,7 +135,7 @@
 <dl class="figures"><div><dt>vrais mails rejoués pour tester le lecteur</dt><dd>230</dd></div><div><dt>langues dans l'espace voyageur</dt><dd>4</dd></div><div><dt>lieux revérifiés deux fois par semaine</dt><dd>63</dd></div><div><dt>versions de la base en cinq jours</dt><dd>18</dd></div></dl>
 </section>
     <section class="psec"><h2 class="psec__title">Captures</h2><div class="gallery"><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/accueil.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/location/accueil.webp" alt="La page du séjour" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Le séjour : les rubriques s'ouvrent étape par étape, de la réservation au départ. Les données sont fictives.</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/decouvrir.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/location/decouvrir.webp" alt="Les sorties" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>Les sorties, choisies selon la saison et pour une famille avec enfants, trois par rubrique avant « voir les autres ».</figcaption></figure><figure class="fig" data-reveal><button class="frame frame--panel frame--natural" type="button" data-zoom="/portfolio/assets/img/location/agenda.webp" aria-label="Agrandir l'image"><img src="/portfolio/assets/img/location/agenda.webp" alt="L'agenda des événements" width="800" height="1720" loading="lazy" decoding="async" sizes="100vw"></button><figcaption>L'agenda : trois événements choisis pour chaque jour du séjour. Les événements sont fictifs.</figcaption></figure></div></section>
-    <section class="psec"><h2 class="psec__title">Compétences IA démontrées</h2><ul class="tags"><li>Agent sous validation humaine</li><li>Le code d'abord, l'IA sur le doute</li><li>Tâches d'agents planifiées</li><li>Tests sur données réelles</li><li>Contenu multilingue</li><li>Sécurité dès la conception</li></ul></section>
+    <section class="psec"><h2 class="psec__title">Compétences IA démontrées</h2><ul class="tags"><li>Agent sous validation humaine</li><li>Agent contre-vérifié par le code</li><li>Tâches d'agents planifiées</li><li>Tests sur données réelles</li><li>Contenu multilingue</li><li>Sécurité dès la conception</li></ul></section>
 
     <nav class="pnav" aria-label="Projets">
       <a href="/portfolio/fr/projets/park-copilot/"><small><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z"/></svg>Projet précédent</small><span>Copilote de journée en parc</span></a>
