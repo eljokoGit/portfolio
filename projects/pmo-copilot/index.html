@@ -264,6 +264,13 @@
     <div><dt>What I did</dt><dd>Only one process may now write, with deduplication, a monotonic ID, a lock and atomic writes.</dd></div>
     <div><dt>The result</dt><dd>Load test: 50 parallel calls in 5 variants produce exactly 5 IDs.</dd></div>
   </dl>
+</article><article class="story" data-reveal style="--i:0">
+  <h3>The meeting judged by its title</h3>
+  <dl>
+    <div><dt>The problem</dt><dd>The agent that decides whether a meeting belongs to the programme read the title and a few excerpts. Too strict, it put on-topic meetings in doubt, and a meeting with a generic title hid a programme workshop.</dd></div>
+    <div><dt>What I did</dt><dd>It now reads the whole transcript, two meetings at a time as in a normal run. A multi-topic meeting counts if one topic is a real programme discussion, and doubt is kept for empty transcripts.</dd></div>
+    <div><dt>The result</dt><dd>Blind test on 6 real meetings: 6 correct verdicts, and a check that every page had been read.</dd></div>
+  </dl>
 </article></div></section>
     <section class="psec"><h2 class="psec__title">By the numbers</h2>
 <dl class="figures"><div><dt>sub-agent runs by the night orchestrator</dt><dd>587</dd></div><div><dt>doubts raised by agents instead of guessing</dt><dd>511</dd></div><div><dt>JSON Schemas validating the base</dt><dd>27</dd></div><div><dt>automated tests in the cockpit</dt><dd>401</dd></div></dl>
